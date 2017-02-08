@@ -1,0 +1,35 @@
+.footer-container #footer #newsletter_block_left {
+  padding: 50px 10px 40px;
+  position: relative;
+}
+.footer-container #footer #newsletter_block_left h4 {
+  padding-right: 0;
+}
+.footer-container #footer #newsletter_block_left:before {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #545869;
+}
+@media (min-width: 992px) {
+  .footer-container #footer #newsletter_block_left {
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
+  .footer-container #footer #newsletter_block_left:before {
+    border-right: 1px solid #545869;
+    height: 1000px;
+    left: 0;
+    top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .footer-container #footer #newsletter_block_left:before {
+    width: 1000px;
+    left: -100px;
+    right: 0;
+    top: 0;
+  }
+}
+.footer-container #footer #social_block ul {
+  text-align: center;
+}

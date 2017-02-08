@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73243276-50B1-40C9-AE18-1982448C20E1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AtekKurumsal</RootNamespace>
+    <AssemblyName>AtekKurumsal</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HaberController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UrunController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AltÖzellikler.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AtekKurumsal.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AtekKurumsal.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AtekKurumsal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AtekKurumsal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AtekKurumsal.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Blog.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Haberler.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HaberListele_Result.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Kategori.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Logo.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Markalar.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MarkaListele_Result.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sayfalar.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SayfaResimleri.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Slider.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SSS.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Özellikler.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ürün.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ÜrünKategori.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ÜrünÖzellik.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\İletisim.cs">
+      <DependentUpon>AtekKurumsal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\HomePageViewModel.cs" />
+    <Compile Include="Models\KategoriAgac.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ProductListModel.cs" />
+    <Compile Include="ViewModels\ProductModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\authentication.css" />
+    <Content Include="assets\css\autoload\highdpi.css" />
+    <Content Include="assets\css\autoload\jquery.bxslider.css" />
+    <Content Include="assets\css\autoload\responsive-tables.css" />
+    <Content Include="assets\css\autoload\uniform.default.css" />
+    <Content Include="assets\css\cms.css" />
+    <Content Include="assets\css\contact-form.css" />
+    <Content Include="assets\css\cssSlider\settings.css" />
+    <Content Include="assets\css\cssSlider\style.css" />
+    <Content Include="assets\css\global.css" />
+    <Content Include="assets\css\modules\blockcart\blockcart.css" />
+    <Content Include="assets\css\modules\blockcategories\blockcategories.css" />
+    <Content Include="assets\css\modules\blockcontact\blockcontact.css" />
+    <Content Include="assets\css\modules\blockcurrencies\blockcurrencies.css" />
+    <Content Include="assets\css\modules\blocklanguages\blocklanguages.css" />
+    <Content Include="assets\css\modules\blocklayered\blocklayered.css" />
+    <Content Include="assets\css\modules\blocknewsletter\blocknewsletter.css" />
+    <Content Include="assets\css\modules\blockpermanentlinks\blockpermanentlinks.css" />
+    <Content Include="assets\css\modules\blocksearch\blocksearch.css" />
+    <Content Include="assets\css\modules\blocktags\blocktags.css" />
+    <Content Include="assets\css\modules\blockuserinfo\blockuserinfo.css" />
+    <Content Include="assets\css\modules\blockviewed\blockviewed.css" />
+    <Content Include="assets\css\modules\blockwishlist\blockwishlist.css" />
+    <Content Include="assets\css\modules\homefeatured\homefeatured.css" />
+    <Content Include="assets\css\modules\homeslider\homeslider.css" />
+    <Content Include="assets\css\modules\productcomments\productcomments.css" />
+    <Content Include="assets\css\modules\smartbloghomelatestnews\css\smartbloglatestnews.css" />
+    <Content Include="assets\css\modules\smartblogtag\css\smartblogtags.css" />
+    <Content Include="assets\css\modules\smartblog\css\smartblogstyle.css" />
+    <Content Include="assets\css\modules\themeconfigurator\css\hooks.css" />
+    <Content Include="assets\css\modules\themeconfigurator\css\live_configurator.css" />
+    <Content Include="assets\css\modules\tmcategoryproducts\views\css\tmcategoryproducts.css" />
+    <Content Include="assets\css\modules\tmheaderaccount\views\css\front.css" />
+    <Content Include="assets\css\modules\tmmegalayout\views\css\tmmegalayout.css" />
+    <Content Include="assets\css\modules\tmmegamenu\views\css\tmmegamenu.css" />
+    <Content Include="assets\css\modules\tmmosaicproducts\views\css\tmmosaicproducts.css" />
+    <Content Include="assets\css\modules\tmmosaicproducts\views\css\video\video-js.css" />
+    <Content Include="assets\css\modules\tmnewsletter\views\css\tmnewsletter.css" />
+    <Content Include="assets\css\modules\tmsearch\views\css\tmsearch.css" />
+    <Content Include="assets\css\modules\tmsociallogin\views\css\front.css" />
+    <Content Include="assets\css\print.css" />
+    <Content Include="assets\css\product.css" />
+    <Content Include="assets\css\product_list.css" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\css\sitemap.css" />
+    <Content Include="assets\css\stores.css" />
+    <Content Include="assets\img\ajax-loader-page.gif" />
+    <Content Include="assets\img\DortParca\lastikservisi.jpg" />
+    <Content Include="assets\img\DortParca\mobilservis.jpg" />
+    <Content Include="assets\img\DortParca\otoexpertizi.jpg" />
+    <Content Include="assets\img\DortParca\otoservisi.jpg" />
+    <Content Include="assets\img\HaberResimleri\1-home-default.jpg" />
+    <Content Include="assets\img\HaberResimleri\2-home-default.jpg" />
+    <Content Include="assets\img\HaberResimleri\3-home-default.jpg" />
+    <Content Include="assets\img\HaberResimleri\4-home-default.jpg" />
+    <Content Include="assets\img\PopulerUrun\background.jpg" />
+    <Content Include="assets\img\PopulerUrun\hpj.png" />
+    <Content Include="assets\img\PopulerUrun\pangea.png" />
+    <Content Include="assets\img\PopulerUrun\robatek.png" />
+    <Content Include="assets\img\p\2\4\24-buyuk.jpg" />
+    <Content Include="assets\img\p\2\4\24-kucuk.jpg" />
+    <Content Include="assets\img\p\2\4\25-buyuk.jpg" />
+    <Content Include="assets\img\p\2\4\25-kucuk.jpg" />
+    <Content Include="assets\img\p\2\4\26-buyuk.jpg" />
+    <Content Include="assets\img\p\2\4\26-kucuk.jpg" />
+    <Content Include="assets\img\p\2\4\27-buyuk.jpg" />
+    <Content Include="assets\img\p\2\4\27-kucuk.jpg" />
+    <Content Include="assets\img\p\2\4\28-buyuk.jpg" />
+    <Content Include="assets\img\p\2\4\28-kucuk.jpg" />
+    <Content Include="assets\img\p\2\4\29-buyuk.jpg" />
+    <Content Include="assets\img\p\2\4\29-kucuk.jpg" />
+    <Content Include="assets\img\p\2\4\30-buyuk.jpg" />
+    <Content Include="assets\img\p\2\4\30-kucuk.jpg" />
+    <Content Include="assets\img\SlideAltKisim\1.jpg" />
+    <Content Include="assets\img\SlideAltKisim\2.jpg" />
+    <Content Include="assets\img\SlideAltKisim\3.jpg" />
+    <Content Include="assets\img\SlideAltKisim\4.jpg" />
+    <Content Include="assets\img\SlideAltKisim\5.jpg" />
+    <Content Include="assets\img\SlideAltKisim\6.jpg" />
+    <Content Include="assets\img\SlideAltKisim\sd\atekakademi.jpg" />
+    <Content Include="assets\img\SlideAltKisim\sd\atekbulgarca.jpg" />
+    <Content Include="assets\img\SlideAltKisim\sd\atekengineering.jpg" />
+    <Content Include="assets\img\SlideAltKisim\sd\ateklift.jpg" />
+    <Content Include="assets\img\SlideAltKisim\sd\atekmakina.jpg" />
+    <Content Include="assets\img\SlideAltKisim\sd\cityhotel.jpg" />
+    <Content Include="assets\img\Slide\background.png" />
+    <Content Include="assets\img\Slide\garaj-montaj3-1_0000_tavan-aydınlatma.png" />
+    <Content Include="assets\img\Slide\garaj-montaj3-1_0001_resepsiyon-lift.png" />
+    <Content Include="assets\img\Slide\garaj-montaj3-1_0002_jant-d]zeltme.png" />
+    <Content Include="assets\img\Slide\garaj-montaj3-1_0003_rot-lifti.png" />
+    <Content Include="assets\img\Slide\garaj-montaj3-1_0005_robatek.png" />
+    <Content Include="assets\img\Slide\garaj-montaj3-1_0006_eyelight.png" />
+    <Content Include="assets\img\Slide\garaj-montaj3-1_0007_blacktech.png" />
+    <Content Include="assets\img\Slide\garaj-montaj3-1_0008_toptul.png" />
+    <Content Include="assets\img\Slide\garaj-montaj3_0000_air-tower.png" />
+    <Content Include="assets\img\cms\banner-topColumn1-.jpg" />
+    <Content Include="assets\img\cms\home1-parallax-bg1.jpg" />
+    <Content Include="assets\img\cms\our_team_1.jpg" />
+    <Content Include="assets\img\cms\our_team_2.jpg" />
+    <Content Include="assets\img\cms\our_team_3.jpg" />
+    <Content Include="assets\img\cms\our_team_4.jpg" />
+    <Content Include="assets\img\cms\parallax-img-3.jpg" />
+    <Content Include="assets\img\contact-form.png" />
+    <Content Include="assets\img\favicon.ico" />
+    <Content Include="assets\img\Logo\logoatek.png" />
+    <Content Include="assets\img\Markalar\istirakler_11.jpg" />
+    <Content Include="assets\img\Markalar\istirakler_13.jpg" />
+    <Content Include="assets\img\Markalar\istirakler_14.jpg" />
+    <Content Include="assets\img\p\3\1\31-home_default.jpg" />
+    <Content Include="assets\img\p\3\1\31-tm_home_default.jpg" />
+    <Content Include="assets\img\p\3\7\37-home_default.jpg" />
+    <Content Include="assets\img\p\3\7\37-tm_home_default.jpg" />
+    <Content Include="assets\img\p\3\7\37-tm_small_default.jpg" />
+    <Content Include="assets\img\p\4\4\44-home_default.jpg" />
+    <Content Include="assets\img\p\4\4\44-tm_home_default.jpg" />
+    <Content Include="assets\img\p\5\2\52-tm_home_default.jpg" />
+    <Content Include="assets\img\p\5\2\52-tm_small_default.jpg" />
+    <Content Include="assets\img\p\5\8\58-tm_home_default.jpg" />
+    <Content Include="assets\img\Slider\Slide1\rs-slider4-bg.jpg" />
+    <Content Include="assets\img\Slider\Slide1\rs-slider4-img1.png" />
+    <Content Include="assets\img\Slider\Slide1\rs-slider4-img10.png" />
+    <Content Include="assets\img\Slider\Slide1\rs-slider4-img11.png" />
+    <Content Include="assets\img\Slider\Slide1\rs-slider4-img12.png" />
+    <Content Include="assets\img\Slider\Slide1\rs-slider4-img2 %281%29.png" />
+    <Content Include="assets\img\Slider\Slide1\rs-slider4-img2.png" />
+    <Content Include="assets\img\Slider\Slide1\rs-slider4-img3.png" />
+    <Content Include="assets\img\Slider\Slide1\rs-slider4-img4.png" />
+    <Content Include="assets\img\Slider\Slide1\rs-slider4-img5.png" />
+    <Content Include="assets\img\Slider\Slide1\rs-slider4-img6.png" />
+    <Content Include="assets\img\Slider\Slide1\rs-slider4-img7.png" />
+    <Content Include="assets\img\Slider\Slide1\rs-slider4-img8.png" />
+    <Content Include="assets\img\Slider\Slide1\rs-slider4-img9.png" />
+    <Content Include="assets\img\Slider\Slide2\rs-slider1-bg.jpg" />
+    <Content Include="assets\img\Slider\Slide2\rs-slider1-phone-bg.png" />
+    <Content Include="assets\img\Slider\Slide2\rs-slider1-phone.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-bg.jpg" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-fifteen.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-fourteen.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-homepage1.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-homepage2.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-homepage3.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-homepage4.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-img.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-quadrate1.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-quadrate2.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-quadrate3.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-quadrate4.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-quadrate5.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-quadrate6.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-quadrate7.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-thirteen.png" />
+    <Content Include="assets\img\Slider\Slide3\rs-slider2-twelve.png" />
+    <Content Include="assets\img\Slider\Slide4\rs-slider3-bg.jpg" />
+    <Content Include="assets\img\Slider\Slide4\rs-slider3-coin.png" />
+    <Content Include="assets\img\Slider\Slide4\rs-slider3-pig.png" />
+    <Content Include="assets\img\Slider\Slide4\rs-slider3-pig2.png" />
+    <Content Include="assets\img\su\1-tm_medium_default.jpg" />
+    <Content Include="assets\img\su\4-tm_medium_default.jpg" />
+    <Content Include="assets\img\su\5-tm_medium_default.jpg" />
+    <Content Include="assets\img\su\6-tm_medium_default.jpg" />
+    <Content Include="assets\img\su\7-tm_medium_default.jpg" />
+    <Content Include="assets\img\su\8-tm_medium_default.jpg" />
+    <Content Include="assets\img\IkiParca\360.jpg" />
+    <Content Include="assets\img\IkiParca\katalog.jpg" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\Allegro-Mobil.jpg" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\BRAVA-JUMBO-7300.jpg" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\BRAVA-MAXI-7000.jpg" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\caruzo.jpg" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\newallegro.jpg" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\newallegroeco.jpg" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\PIKOLA-PLUS-41PLUS00.jpg" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\riviera-43-00.jpg" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\riviera-ti-plus-43ti00plus.jpg" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\Robatek.jpg" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\SPEEDY-14-56.jpg" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\SWING-14-30.jpg" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\zanini-4700.JPG" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\zanini-ti-plus_1.JPG" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\zanitro-n2-plus.jpg" />
+    <Content Include="assets\img\Urunler\LastikSökmeTakma\zanitro-n2.jpg" />
+    <Content Include="assets\js\autoload\10-bootstrap.min.js" />
+    <Content Include="assets\js\autoload\14-device.min.js" />
+    <Content Include="assets\js\autoload\15-jquery.total-storage.min.js" />
+    <Content Include="assets\js\autoload\15-jquery.uniform-modified.js" />
+    <Content Include="assets\js\autoload\16-jquery.scrollmagic.min.js" />
+    <Content Include="assets\js\autoload\17-jquery.scrollmagic.debug.js" />
+    <Content Include="assets\js\autoload\18-TimelineMax.min.js" />
+    <Content Include="assets\js\autoload\19-TweenMax.min.js" />
+    <Content Include="assets\js\autoload\20-jquery.bxslider.js" />
+    <Content Include="assets\js\autoload\21-modernizr_v2_7_2.min.js" />
+    <Content Include="assets\js\autoload\22-jquery.jscrollpane.js" />
+    <Content Include="assets\js\category.js" />
+    <Content Include="assets\js\contact-form.js" />
+    <Content Include="assets\js\global.js" />
+    <Content Include="assets\js\index.js" />
+    <Content Include="assets\js\jquery.themepunch.plugins.min.js" />
+    <Content Include="assets\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="assets\js\jquery\jquery-1.11.0.min.js" />
+    <Content Include="assets\js\jquery\jquery-migrate-1.2.1.min.js" />
+    <Content Include="assets\js\jquery\plugins\autocomplete\jquery.autocomplete.css" />
+    <Content Include="assets\js\jquery\plugins\autocomplete\jquery.autocomplete.js" />
+    <Content Include="assets\js\jquery\plugins\bxslider\images\bx_loader.gif" />
+    <Content Include="assets\js\jquery\plugins\bxslider\jquery.bxslider.css" />
+    <Content Include="assets\js\jquery\plugins\bxslider\jquery.bxslider.js" />
+    <Content Include="assets\js\jquery\plugins\fancybox\jquery.fancybox.css" />
+    <Content Include="assets\js\jquery\plugins\fancybox\jquery.fancybox.js" />
+    <Content Include="assets\js\jquery\plugins\jquery.easing.js" />
+    <Content Include="assets\js\jquery\plugins\jquery.scrollTo.js" />
+    <Content Include="assets\js\jquery\plugins\jquery.serialScroll.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\map.js" />
+    <Content Include="assets\js\modules\blockcart\ajax-cart.js" />
+    <Content Include="assets\js\modules\blocknewsletter\blocknewsletter.js" />
+    <Content Include="assets\js\modules\blocksearch\blocksearch.js" />
+    <Content Include="assets\js\modules\blockwishlist\js\ajax-wishlist.js" />
+    <Content Include="assets\js\modules\homeslider\js\homeslider.js" />
+    <Content Include="assets\js\modules\tmmegamenu\views\js\hoverIntent.js" />
+    <Content Include="assets\js\modules\tmmegamenu\views\js\superfish.js" />
+    <Content Include="assets\js\modules\tmmegamenu\views\js\tmmegamenu.js" />
+    <Content Include="assets\js\modules\tmrelatedproducts\views\css\tmrelatedproducts.css" />
+    <Content Include="assets\js\modules\tmrelatedproducts\views\js\tmrelatedproducts.js" />
+    <Content Include="assets\js\modules\tmsearch\views\js\tmsearch.js" />
+    <Content Include="assets\js\product.js" />
+    <Content Include="assets\js\products-comparison.js" />
+    <Content Include="assets\js\script.js" />
+    <Content Include="assets\js\tools.js" />
+    <Content Include="assets\js\validate.js" />
+    <Content Include="assets\modules\blockfacebook\blockfacebook.js" />
+    <Content Include="assets\modules\blockfacebook\css\blockfacebook.css" />
+    <Content Include="assets\modules\homeslider\925ad3bc0432f01488f427f906b9c76ca6ed2257_slider-img2.jpg" />
+    <Content Include="assets\modules\homeslider\eabc851ce279a1a5a3b16880999d7093a67b4025_slider-img3.jpg" />
+    <Content Include="assets\modules\homeslider\ee98f45f06d72a795776fd58d0c3a65bf64eae74_slider-img1.jpg" />
+    <Content Include="assets\modules\productcomments\js\jquery.textareaCounter.plugin.js" />
+    <Content Include="assets\modules\productcomments\js\productcomments.js" />
+    <Content Include="assets\modules\smartblog\images\1-home-default.jpg" />
+    <Content Include="assets\modules\smartblog\images\1-home-small.jpg" />
+    <Content Include="assets\modules\smartblog\images\2-home-default.jpg" />
+    <Content Include="assets\modules\smartblog\images\2-home-small.jpg" />
+    <Content Include="assets\modules\smartblog\images\2-single-default.jpg" />
+    <Content Include="assets\modules\smartblog\images\3-home-default.jpg" />
+    <Content Include="assets\modules\smartblog\images\3-home-small.jpg" />
+    <Content Include="assets\modules\smartblog\images\3-single-default.jpg" />
+    <Content Include="assets\modules\smartblog\images\4-home-default.jpg" />
+    <Content Include="assets\modules\smartblog\images\4-home-small.jpg" />
+    <Content Include="assets\modules\smartblog\images\4-single-default.jpg" />
+    <Content Include="assets\modules\themeconfiglink\views\css\themeconfiglink.css" />
+    <Content Include="assets\modules\themeconfiglink\views\js\themeconfiglink.js" />
+    <Content Include="assets\modules\tmdaydeal\views\css\tmdaydeal.css" />
+    <Content Include="assets\modules\tmdaydeal\views\js\jquery.countdown.js" />
+    <Content Include="assets\modules\tmdaydeal\views\js\tmdaydeal.js" />
+    <Content Include="assets\modules\tmheaderaccount\views\js\front.js" />
+    <Content Include="assets\modules\tmhtmlcontent\img\2f4c501332e28c5e79290dc233eb8dda203f3030_banner-home1-img2.jpg" />
+    <Content Include="assets\modules\tmhtmlcontent\img\360.jpg" />
+    <Content Include="assets\modules\tmhtmlcontent\img\78f56482d1e66c810313cfc34b8ae25e1c8cca98_banner-top4.jpg" />
+    <Content Include="assets\modules\tmhtmlcontent\img\katalog.jpg" />
+    <Content Include="assets\modules\tmmediaparallax\views\css\rd-parallax.css" />
+    <Content Include="assets\modules\tmmediaparallax\views\css\tmmediaparallax.css" />
+    <Content Include="assets\modules\tmmediaparallax\views\js\jquery.rd-parallax.min.js" />
+    <Content Include="assets\modules\tmmediaparallax\views\js\jquery.vide.min.js" />
+    <Content Include="assets\modules\tmmediaparallax\views\js\jquery.youtubebackground.js" />
+    <Content Include="assets\modules\tmmediaparallax\views\js\tmmediaparallax.js" />
+    <Content Include="assets\modules\tmmegalayout\views\css\layouts\Footer1.css" />
+    <Content Include="assets\modules\tmmegalayout\views\css\layouts\Header1.css" />
+    <Content Include="assets\modules\tmmegalayout\views\css\layouts\Header2.css" />
+    <Content Include="assets\modules\tmmegalayout\views\css\layouts\HeaderAnasayfa.css" />
+    <Content Include="assets\modules\tmmegalayout\views\css\layouts\Home1.css" />
+    <Content Include="assets\modules\tmmegalayout\views\css\layouts\TopColumn1.css" />
+    <Content Include="assets\modules\tmmegalayout\views\css\layouts\TopColumn2.css" />
+    <Content Include="assets\modules\tmmegalayout\views\js\layouts\Home1.js" />
+    <Content Include="assets\modules\tmmegalayout\views\js\tmmegalayout.js" />
+    <Content Include="assets\modules\tmmegamenu\images\1.jpg" />
+    <Content Include="assets\modules\tmmegamenu\images\2.jpg" />
+    <Content Include="assets\modules\tmmegamenu\images\3.jpg" />
+    <Content Include="assets\modules\tmmegamenu\views\js\hoverIntent.js" />
+    <Content Include="assets\modules\tmmegamenu\views\js\superfish.js" />
+    <Content Include="assets\modules\tmmosaicproducts\views\css\video\video-js.css" />
+    <Content Include="assets\modules\tmmosaicproducts\views\js\tmmosaicproducts.js" />
+    <Content Include="assets\modules\tmmosaicproducts\views\js\video\video.js" />
+    <Content Include="assets\modules\tmnewsletter\views\js\tmnewsletter.js" />
+    <Content Include="assets\modules\tmproductvideos\views\css\tmproductvideos.css" />
+    <Content Include="assets\modules\tmproductvideos\views\css\video\video-js.css" />
+    <Content Include="assets\modules\tmproductvideos\views\js\video\video.js" />
+    <Content Include="assets\modules\tmproductzoomer\views\js\tmproductzoomer.js" />
+    <Content Include="assets\modules\tmsociallogin\views\js\front.js" />
+    <Content Include="assets\css\skin8.css" />
+    <Content Include="assets\css\PagedList.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="assets\js\jquery\jquery.unobtrusive-ajax.js" />
+    <Content Include="assets\js\jquery\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="assets\js\jquery\jquery.validate.unobtrusive.bootstrap.js" />
+    <Content Include="assets\js\jquery\jquery.validate.unobtrusive.bootstrap.min.js" />
+    <Content Include="HtmlTemp\ProductDetails.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="assets\fonts\fl-outicons.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\modules\tmproductzoomer\views\js\jquery.ez-plus.js" />
+    <Content Include="assets\css\fonts\revicons.ttf" />
+    <Content Include="assets\css\fonts\revicons.woff" />
+    <Content Include="assets\js\tools\treeManagement.js" />
+    <EntityDeploy Include="Models\AtekKurumsal.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AtekKurumsal.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\AtekKurumsal.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AtekKurumsal.edmx</DependentUpon>
+      <LastGenOutput>AtekKurumsal.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\AtekKurumsal.edmx.diagram">
+      <DependentUpon>AtekKurumsal.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\AtekKurumsal.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AtekKurumsal.edmx</DependentUpon>
+      <LastGenOutput>AtekKurumsal.cs</LastGenOutput>
+    </Content>
+    <None Include="Project_Readme.html" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Haber\Index.cshtml" />
+    <Content Include="Views\Home\Vizyon.cshtml" />
+    <Content Include="Views\Haber\Blog.cshtml" />
+    <Content Include="Views\Haber\BasındaBiz.cshtml" />
+    <Content Include="Views\Haber\HaberDetay.cshtml" />
+    <Content Include="Views\Home\SSS.cshtml" />
+    <Content Include="Views\Home\Location.cshtml" />
+    <Content Include="Views\Home\_Logo.cshtml" />
+    <None Include="Properties\PublishProfiles\Publish.pubxml" />
+    <Content Include="Views\Urun\UrunDetay.cshtml" />
+    <Content Include="Views\Home\_AnaBasliklar.cshtml" />
+    <Content Include="Views\Home\_AltKategorileriListele.cshtml" />
+    <Content Include="Views\Home\_GenisAltKategori.cshtml" />
+    <Content Include="Views\Home\_GenisAltKategoriList.cshtml" />
+    <Content Include="Views\Shared\_LayoutÜrün.cshtml" />
+    <Content Include="Views\Urun\Index.cshtml" />
+    <Content Include="Views\Urun\_FilterSidebar.cshtml" />
+    <Content Include="Views\Urun\_AltFilters.cshtml" />
+    <Content Include="Views\Urun\_ÜrünListele.cshtml" />
+    <Content Include="Views\Shared\_LayoutProduct.cshtml" />
+    <Content Include="Views\Urun\ProductDetails.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>31087</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:31063/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

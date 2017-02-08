@@ -1,0 +1,27 @@
+header nav .row > .col-lg-12 {
+  min-height: inherit;
+}
+header .row #header_logo {
+  float: left;
+  text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  header .row #header_logo > a {
+    width: 195px;
+  }
+}
+@media only screen and (min-width: 1761px) {
+  header ul#header_links {
+    line-height: 164px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1810px) {
+  header ul#header_links {
+    float: none;
+    clear: both;
+    background: #1c2242;
+    height: 80px;
+    line-height: 80px;
+    border-top: 1px solid #545869;
+  }
+}

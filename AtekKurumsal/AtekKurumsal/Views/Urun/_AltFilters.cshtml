@@ -1,0 +1,259 @@
+﻿@model AtekKurumsal.ViewModels.ProductModel
+
+@using PagedList
+@using PagedList.Mvc
+
+
+
+@foreach (var item in Model.AltÖzellikler)
+{
+    <li class=" nomargin hiddable col-lg-12">
+        <input type="checkbox" class="clinkk" onchange="getProduct(@item.AltÖzellikId,1)" name="option" id="a_@item.AltÖzellikId" value="@item.ÖzellikId">
+        <label for="a_@item.AltÖzellikId">
+            <a href="" data-rel="">
+                <strong>@item.AltÖzellikAdi</strong>
+                <span></span>
+            </a>
+        </label>
+    </li>
+
+}
+
+<script>
+
+    var IdList = "";
+    var Id;
+
+    function getProduct(id, pageId) {
+
+
+        IdList = "";
+        $(".clinkk").each(function () {
+            if ($(this).attr("checked") == "checked") {
+                IdList += $(this).attr("id").replace("a_", "") + ",";
+            }
+
+        });
+
+
+        var n = $("input:checked").length;
+        var ürüns = null;
+
+        if ($('#a_' + id).is(":checked")) {
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("_FilterProducts","Urun")',
+                dataType: "json",
+                data: { "IdList": IdList, "pageId": pageId },
+                success: function (data) {
+                    $(".product_list").empty();
+                    $(".bottom-pagination-content").empty();
+                    ürüns = data;
+                    $.each(data.Products, function (i, item) {
+                        KategoriIdd = item.KategoriId;
+                        Id = item.UrunId;
+                        $(".product_list").append('<li class="ajax_block_product col-xs-6 col-sm-6 col-md-6 last-in-line last-item-of-tablet-line last-item-of-mobile-line" id="li' + id + '">' +
+                                   ' <div class="product-container" itemscope itemtype="https://schema.org/Product">' +
+                                       ' <div class="left-block">' +
+                                        '    <div class="product-image-container">' +
+                                        '        <a class="product_img_link" href="@Url.Action("ProductDetails", "Urun", new {id=})" title="Sink with' + 'Unique Hand Painting Pattern &amp; Brushed Nickel" itemprop="url">' +
+                                       '             <img class="replace-2x img-responsive" src="' + item.Resim + '" alt="Sink with Unique Hand Painting Pattern &amp; Brushed Nickel" title="Sink with Unique Hand Painting' + 'Pattern &amp; Brushed Nickel" itemprop="image" />' +
+                          '     </a>' +
+
+                                         '       <a class="sale-box" href="">' +
+                                        '            <span class="sale-label">KOD : ' + item.ÜrünKodu + '</span>' +
+                                        '        </a>' +
+
+                                        '    </div>' +
+                                       ' </div>' +
+
+                                      '  <div class="right-block">' +
+                                      '      <h5 itemprop="name">' +
+                                       '         <a class="product-name" href="#" title="Sink with Unique Hand Painting Pattern &amp; Brushed Nickel" itemprop="url">' +
+                                      '              <span class="list-name">Sink with Unique Hand Painting Pattern &amp;...</span>' +
+                                      '              <span class="grid-name">' + item.ÜrünAdi + '</span>' +
+                                     '           </a>' +
+                                    '        </h5>' +
+
+
+                                     '  <div class="button-container"> ' +
+                                          ' <a class="quick-view" href=""> ' +
+                                              '<span>Quick view</span>' +
+                                          '</a>' +
+                                      '</div>' +
+                               '   </div>' +
+                        '   </div>' +
+                                 ' </li>')
+                    })
+
+                    $(".bottom-pagination-content").append('<div id="pagination_bottom" class="pagination clearfix">' +
+                 '<form class="showall" action="" method="get">' +
+                   '  <div>' +
+                    '     <button type="submit" class="btn btn-sm btn-default">' +
+                     '        <span>Show all</span>' +
+                      '   </button>' +
+                       '  <input type="hidden" name="id_lang" value="1" />' +
+                        ' <input type="hidden" name="id_category" value="12" />' +
+                         '<input type="hidden" name="controller" value="category" />' +
+                         '<input name="n" id="nb_items" class="hidden" value="20" />' +
+                     '</div>' +
+                 '</form>' +
+                ' <ul class="pagination"> ' +
+
+                 ürüns.pagination
+
+             + '</ul>' +
+          '</div>')
+
+                }
+            })
+
+        }
+
+        else {
+            //document.getElementById("li" + id).remove();
+
+            var KategoriId = KategoriIdd;
+
+            if (n == 0) {
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("GetAllProducts", "Urun")',
+                    dataType: "JSON",
+                    data: { "KategoriId": KategoriId, "pageId": pageId },
+                    success: function (data) {
+                        ürüns = data;
+                        $(".product_list").empty();
+                        $(".bottom-pagination-content").empty();
+                        $.each(data.Products, function (i, item) {
+                            $(".product_list").append('<li class="ajax_block_product col-xs-6 col-sm-6 col-md-6 last-in-line last-item-of-tablet-line last-item-of-mobile-line" >' +
+                                           ' <div class="product-container" itemscope itemtype="https://schema.org/Product">' +
+                                               ' <div class="left-block">' +
+                                                '    <div class="product-image-container">' +
+                                                '        <a class="product_img_link" href="" title="Sink with' + 'Unique Hand Painting Pattern &amp; Brushed Nickel" itemprop="url">' +
+                                               '             <img class="replace-2x img-responsive" src="' + item.Resim + '" alt="Sink with Unique Hand Painting Pattern &amp; Brushed Nickel" title="Sink with Unique Hand Painting' + 'Pattern &amp; Brushed Nickel" itemprop="image" />' +
+                                  '     </a>' +
+
+                                                 '       <a class="sale-box" href="">' +
+                                                '            <span class="sale-label">KOD : ' + item.ÜrünKodu + '</span>' +
+                                                '        </a>' +
+
+                                                '    </div>' +
+                                               ' </div>' +
+
+                                              '  <div class="right-block">' +
+                                              '      <h5 itemprop="name">' +
+                                               '         <a class="product-name" href="#" title="Sink with Unique Hand Painting Pattern &amp; Brushed Nickel" itemprop="url">' +
+                                              '              <span class="list-name">Sink with Unique Hand Painting Pattern &amp;...</span>' +
+                                              '              <span class="grid-name">' + item.ÜrünAdi + '</span>' +
+                                             '           </a>' +
+                                            '        </h5>' +
+
+
+                                              '  <div class="button-container"> ' +
+                                          ' <a class="quick-view" href=""> ' +
+                                              '<span>Quick view</span>' +
+                                          '</a>' +
+                                      '</div>' +
+                                  '      </div>' +
+                                '   </div>' +
+                                         ' </li>')
+                            $(".bottom-pagination-content").html('<div id="pagination_bottom" class="pagination clearfix">' +
+                 '<form class="showall" action="" method="get">' +
+                   '  <div>' +
+                    '     <button type="submit" class="btn btn-sm btn-default">' +
+                     '        <span>Show all</span>' +
+                      '   </button>' +
+                       '  <input type="hidden" name="id_lang" value="1" />' +
+                        ' <input type="hidden" name="id_category" value="12" />' +
+                         '<input type="hidden" name="controller" value="category" />' +
+                         '<input name="n" id="nb_items" class="hidden" value="20" />' +
+                     '</div>' +
+                 '</form>' +
+                ' <ul class="pagination"> ' +
+
+                  ürüns.pagination
+
+             + '</ul>' +
+          '</div>')
+                        })
+
+                    }
+                })
+            }
+
+            else if (n > 0) {
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("_FilterProducts","Urun")',
+                    dataType: "json",
+                    data: { "IdList": IdList, "pageId": pageId },
+                    success: function (data) {
+                        $(".bottom-pagination-content").empty();
+                        $(".product_list").empty();
+                        ürüns = data;
+                        $.each(data.Products, function (i, item) {
+                            $(".product_list").append('<li class="ajax_block_product col-xs-6 col-sm-6 col-md-6 last-in-line last-item-of-tablet-line last-item-of-mobile-line" id="li' + id + '">' +
+                                       ' <div class="product-container" itemscope itemtype="https://schema.org/Product">' +
+                                           ' <div class="left-block">' +
+                                            '    <div class="product-image-container">' +
+                                            '        <a class="product_img_link" href="" title="Sink with' + 'Unique Hand Painting Pattern &amp; Brushed Nickel" itemprop="url">' +
+                                           '             <img class="replace-2x img-responsive" src="' + item.Resim + '" alt="Sink with Unique Hand Painting Pattern &amp; Brushed Nickel" title="Sink with Unique Hand Painting' + 'Pattern &amp; Brushed Nickel" itemprop="image" />' +
+                              '     </a>' +
+
+                                             '       <a class="sale-box" href="">' +
+                                            '            <span class="sale-label">KOD : ' + item.ÜrünKodu + '</span>' +
+                                            '        </a>' +
+
+                                            '    </div>' +
+                                           ' </div>' +
+
+                                          '  <div class="right-block">' +
+                                          '      <h5 itemprop="name">' +
+                                           '         <a class="product-name" href="#" title="Sink with Unique Hand Painting Pattern &amp; Brushed Nickel" itemprop="url">' +
+                                          '              <span class="list-name">Sink with Unique Hand Painting Pattern &amp;...</span>' +
+                                          '              <span class="grid-name">' + item.ÜrünAdi + '</span>' +
+                                         '           </a>' +
+                                        '        </h5>' +
+
+
+                                        '  <div class="button-container"> ' +
+                                          ' <a class="quick-view" href=""> ' +
+                                              '<span>Quick view</span>' +
+                                          '</a>' +
+                                       '</div>' +
+                                  '      </div>' +
+                            '   </div>' +
+                                     ' </li>')
+                        })
+                        $(".bottom-pagination-content").append('<div id="pagination_bottom" class="pagination clearfix">' +
+                 '<form class="showall" action="" method="get">' +
+                   '  <div>' +
+                    '     <button type="submit" class="btn btn-sm btn-default">' +
+                     '        <span>Show all</span>' +
+                      '   </button>' +
+                       '  <input type="hidden" name="id_lang" value="1" />' +
+                        ' <input type="hidden" name="id_category" value="12" />' +
+                         '<input type="hidden" name="controller" value="category" />' +
+                         '<input name="n" id="nb_items" class="hidden" value="20" />' +
+                     '</div>' +
+                 '</form>' +
+                ' <ul class="pagination"> ' +
+
+                 ürüns.pagination
+
+             + '</ul>' +
+          '</div>')
+
+                    }
+
+                })
+            }
+
+        }
+
+    }
+
+</script>

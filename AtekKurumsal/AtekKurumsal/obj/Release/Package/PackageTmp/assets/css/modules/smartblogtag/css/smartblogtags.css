@@ -1,0 +1,14 @@
+#tags_blog_block_left .block_content a {
+  display: inline-block;
+  float: left;
+  margin: 0 3px 3px 0;
+  padding: 4px 20px 5px;
+  background: #f4f4f5;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px; }
+  #tags_blog_block_left .block_content a:hover {
+    background: red;
+    color: white; }

@@ -1,0 +1,171 @@
+﻿header {
+  background: #191e3b;
+}
+header nav .row > .col-lg-12 {
+  min-height: inherit;
+}
+header .row #header_logo {
+  float: left;
+  text-align: center;    /* margin-right:4%; */
+}
+/*@media (min-width: 768px) and (max-width: 1399px) {
+  header .row #header_logo {
+    text-align: center;
+    height: 80px;
+    margin-right: 3%;
+  }
+  header .row #header_logo > a {
+    width: 195px;
+    height: 130px;
+  }
+  header .row #header_logo > a img {
+    height: 80px;
+  }
+}*/
+@media (min-width:768px) and (max-width:1399px){
+      header .nav #header_logo > a {
+      background: #f7f7f7;
+      width: 230px;
+      height:164px;
+      display: block;
+      text-align: center;
+      padding-left: 30px;
+      padding-right: 30px; }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  header .row #header_logo {
+    margin-right: 14%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #header .cartBox .shopping_cart {
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1399px) {
+  header .row #header_logo {
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header #currencies-block-top,
+  header #languages-block-top {
+    float: left;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header ul#header_linksA {
+    width: 100%;
+    padding: 20px 0 20px;
+    border-top: 1px solid #545869;
+    float: left;
+  }
+  header ul#header_linksA li {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 992px) {
+  header ul#header_linksA {
+    float: right;         /* Menünün sağında */
+    /*border-left: 1px solid #191e3b;
+    border-right: 1px solid #191e3b;*/
+    padding: 10px 15px;
+    position: relative;
+    display: block;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-left: 0px solid #545869;    /* isimlerin yanındaki çizgiler */
+    height: 80px;
+    width: 80px;
+    padding: 0 5px;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  header ul#header_linksA li {
+    text-transform: capitalize;
+    display: none;
+    padding: 0;
+  }
+  header ul#header_linksA li a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    color: #a1a4ae;
+    background: white;
+  }
+  header ul#header_linksA li a:hover, header ul#header_linksA li a.active {
+    color: white;
+  }
+  header ul#header_linksA li a.active:after {
+    font-family: "fl-outicons";
+   
+    display: inline-block;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: #a1a4ae;
+    padding-left: 12px;
+    font-weight: normal;
+  }
+
+  header ul#header_linksA li.active_mod a.active {
+    color: #1e1e1e;
+  }
+  header ul#header_linksA li:first-child {
+    display: block;
+  }
+  header ul#header_linksA:hover {
+    z-index: 9;
+  }
+  header ul#header_linksA:hover li {
+    display: block;
+  }
+  header ul#header_linksA:hover li a.active:after {
+    font-family: "fl-outicons";
+    /*content: "\e00f ";*/    /*Üzerine geldikten sonra çıkan ok işareti*/
+    display: inline-block;
+    font-weight: normal;
+    color: red;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1700px) {
+  header ul#header_linksA li a.active:after {
+    font-size: 15px;
+    line-height: 16px;
+    padding-left: 5px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  header ul#header_linksA {
+    padding: 20px 0 30px;
+    width: 140px;
+  }
+  header ul#header_linksA li a {
+    padding-left: 10px;
+  }
+  header ul#header_linksA li:last-child a {
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  header ul#header_linksA {
+    padding: 60px 0 30px;
+    height: 64px;  /*Üst Menü uzunluğu */
+    width: 140px;  /*Üst menü genişliği*/
+  }
+  header ul#header_linksA li a {
+    font-size: 18px;
+    padding-left: 30px;
+  }
+  header ul#header_linksA li:last-child a {
+    padding-bottom: 40px;
+  }
+}

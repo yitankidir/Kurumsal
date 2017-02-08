@@ -1,0 +1,152 @@
+@media (max-width: 767px) {
+  #tmhtmlcontent_topColumn {
+    display: flex;
+    -webkit-display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    margin: 0;
+  }
+  #tmhtmlcontent_topColumn li {
+    padding: 0;
+    max-width: 570px;
+    width: 100%;
+    margin: 0 auto;
+    float: none !important;
+  }
+  #tmhtmlcontent_topColumn li .col-sm-4 {
+    width: 100%;
+  }
+  #tmhtmlcontent_topColumn li > ul.row {
+    margin: 0;
+    padding: 0;
+  }
+  #tmhtmlcontent_topColumn li > ul.row li {
+    padding: 0;
+    margin: 0 auto;
+  }
+  #tmhtmlcontent_topColumn li > ul.row li:last-child {
+    display: none;
+  }
+}
+#tmhtmlcontent_topColumn li {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+#tmhtmlcontent_topColumn li img {
+  width: 100%;
+}
+#tmhtmlcontent_topColumn li.banner_content_left, #tmhtmlcontent_topColumn li.banner_content_right {
+  overflow: hidden;
+  display: block;
+}
+#tmhtmlcontent_topColumn li.banner_content_left .item-html > div, #tmhtmlcontent_topColumn li.banner_content_right .item-html > div {
+  padding: 80px;
+}
+@media (max-width: 1599px) {
+  #tmhtmlcontent_topColumn li.banner_content_left .item-html > div, #tmhtmlcontent_topColumn li.banner_content_right .item-html > div {
+    padding: 30px;
+  }
+}
+@media (min-width: 768px) {
+  #tmhtmlcontent_topColumn li.banner_content_left:hover h2:after,
+  #tmhtmlcontent_topColumn li.banner_content_left:hover p.custom:before, #tmhtmlcontent_topColumn li.banner_content_right:hover h2:after,
+  #tmhtmlcontent_topColumn li.banner_content_right:hover p.custom:before {
+    -moz-animation: zoomIn 0.6s;
+    -webkit-animation: zoomIn 0.6s;
+    animation: zoomIn 0.6s;
+  }
+}
+#tmhtmlcontent_topColumn li.banner_content_left .item-html > div h2 {
+  position: relative;
+  padding-right: 160px;
+  margin-top: 0;
+}
+@media (max-width: 1599px) {
+  #tmhtmlcontent_topColumn li.banner_content_left .item-html > div h2 {
+    padding-right: 80px;
+  }
+}
+#tmhtmlcontent_topColumn li.banner_content_left .item-html > div h2:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 2px;
+  background: #191e3b;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 15%;
+  margin-left: 15px;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (min-width: 1600px) {
+  #tmhtmlcontent_topColumn li.banner_content_left .item-html > div h2:after {
+    width: 147px;
+  }
+}
+#tmhtmlcontent_topColumn li.banner_content_right .item-html > div {
+  float: right;
+  margin-right: 15px;
+}
+#tmhtmlcontent_topColumn li.banner_content_right .item-html > div h2, #tmhtmlcontent_topColumn li.banner_content_right .item-html > div p {
+  margin: 0;
+  padding-left: 160px;
+}
+@media (max-width: 1599px) {
+  #tmhtmlcontent_topColumn li.banner_content_right .item-html > div h2, #tmhtmlcontent_topColumn li.banner_content_right .item-html > div p {
+    padding-left: 80px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  #tmhtmlcontent_topColumn li.banner_content_right .item-html > div h2, #tmhtmlcontent_topColumn li.banner_content_right .item-html > div p {
+    padding-left: 56px;
+  }
+}
+#tmhtmlcontent_topColumn li.banner_content_right .item-html > div p.custom {
+  position: relative;
+}
+#tmhtmlcontent_topColumn li.banner_content_right .item-html > div p.custom:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 2px;
+  background: #191e3b;
+  top: 8px;
+  width: 15%;
+  margin-right: 15px;
+}
+@media (min-width: 1600px) {
+  #tmhtmlcontent_topColumn li.banner_content_right .item-html > div p.custom:before {
+    width: 147px;
+  }
+}
+#tmhtmlcontent_topColumn .item-html {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+#tmhtmlcontent_topColumn .item-html p.custom {
+  font: bold 50px/1 "Montserrat", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+#tmhtmlcontent_topColumn .item-html h2 {
+  font: 400 23px/28px "Montserrat", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+#tmhtmlcontent_topColumn .item-html h2, #tmhtmlcontent_topColumn .item-html p.custom {
+  color: #191e3b;
+}
+@media (max-width: 1599px) {
+  #tmhtmlcontent_topColumn .item-html h2, #tmhtmlcontent_topColumn .item-html p.custom {
+    font-size: 20px;
+  }
+}

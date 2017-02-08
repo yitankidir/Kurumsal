@@ -1,0 +1,29 @@
+﻿@model IEnumerable<AtekKurumsal.Models.Kategori>
+@using AtekKurumsal.Models;
+@{
+    KategoriAgac tree = new KategoriAgac();
+}
+
+@foreach (var item in Model)
+{
+
+    <li class="all-manufacturers">
+        <a href="@Url.Action("Index", "Urun", new {KategoriId=item.KategoriId })" id="@item.KategoriId" title="@item.KategoriAdi ürünleri"> @item.KategoriAdi</a>
+
+        @if (tree.AltKategorileriGetir(item.KategoriId).Select(x => x.ÜstKategoriId).Count() == 0)
+        {
+
+        }
+
+        else
+        {
+            <ul>
+
+                @Html.Action("_AltKategorileriListele", "Home", new { ÜstKategoriId = item.KategoriId })
+
+            </ul>
+        }
+    </li>
+
+}
+

@@ -1,0 +1,131 @@
+/* Block newsletter */
+#columns #newsletter_block_left .form-group {
+  margin-bottom: 0; }
+  #columns #newsletter_block_left .form-group .form-control {
+    max-width: 100%;
+    display: block;
+    margin-right: 6px;
+    margin-bottom: 10px; }
+  #columns #newsletter_block_left .form-group.email-error .form-control {
+    border-color: #f00; }
+  #columns #newsletter_block_left .form-group.email-valid .form-control {
+    border-color: #0C3; }
+#columns #newsletter_block_left .success_inline, #columns #newsletter_block_left .warning_inline {
+  text-align: left;
+  padding: 1px 0 0 0;
+  margin-bottom: -19px; }
+#columns #newsletter_block_left .success_inline {
+  color: #f2896d; }
+#columns #newsletter_block_left .warning_inline {
+  color: #f13340; }
+
+/* Block newsletter footer */
+#footer #newsletter_block_left {
+  margin-bottom: 0; }
+  #footer #newsletter_block_left .block_content {
+    overflow: hidden; }
+    #footer #newsletter_block_left .block_content p.alert.alert-danger,
+    #footer #newsletter_block_left .block_content p.alert.email-valid,
+    #footer #newsletter_block_left .block_content p.alert.alert-success {
+      display: none !important; }
+    #footer #newsletter_block_left .block_content .form-group {
+      position: relative;
+      max-width: 370px;
+      margin: 0 auto; }
+      #footer #newsletter_block_left .block_content .form-group .form-control {
+        height: 55px;
+        line-height: 55px;
+        border: 1px solid #545869;
+        background: transparent;
+        color: #a1a4ae;
+        padding: 5px 12px;
+        display: block;
+        padding-right: 60px; }
+        #footer #newsletter_block_left .block_content .form-group .form-control ::-moz-placeholder,
+        #footer #newsletter_block_left .block_content .form-group .form-control ::-webkit-input-placeholder {
+          color: #a1a4ae; }
+        #footer #newsletter_block_left .block_content .form-group .form-control:focus {
+          -moz-box-shadow: black 0 0 0;
+          -webkit-box-shadow: black 0 0 0;
+          box-shadow: black 0 0 0; }
+      #footer #newsletter_block_left .block_content .form-group .btn-sm {
+        background: none;
+        width: 55px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: center;
+        color: #a1a4ae;
+        padding: 0;
+        border: none;
+        border-left: 1px solid #545869; }
+        #footer #newsletter_block_left .block_content .form-group .btn-sm:before {
+          font-family: "fl-outicons";
+          content: "\e049";
+          display: inline-block;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 30px;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          width: 100%;
+          -moz-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+          -o-transform: translate(0, -50%);
+          -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+          color: #a1a4ae;
+          -moz-transition: 0.3s;
+          -o-transition: 0.3s;
+          -webkit-transition: 0.3s;
+          transition: 0.3s; }
+        #footer #newsletter_block_left .block_content .form-group .btn-sm:hover {
+          background: rgba(161, 164, 174, 0.2); }
+          #footer #newsletter_block_left .block_content .form-group .btn-sm:hover:before {
+            padding-left: 4px; }
+        #footer #newsletter_block_left .block_content .form-group .btn-sm span {
+          display: none; }
+      #footer #newsletter_block_left .block_content .form-group.email-error, #footer #newsletter_block_left .block_content .form-group.form-error {
+        border-color: #f13340; }
+        #footer #newsletter_block_left .block_content .form-group.email-error .form-control, #footer #newsletter_block_left .block_content .form-group.form-error .form-control {
+          border-color: #f13340; }
+      #footer #newsletter_block_left .block_content .form-group.email-valid, #footer #newsletter_block_left .block_content .form-group.form-ok {
+        border-color: #72E235; }
+        #footer #newsletter_block_left .block_content .form-group.email-valid .form-control, #footer #newsletter_block_left .block_content .form-group.form-ok .form-control {
+          border-color: #72E235; }
+  #footer #newsletter_block_left .warning_inline {
+    display: block;
+    color: #f13340;
+    font-size: 13px;
+    line-height: 26px;
+    clear: both; }
+    @media (min-width: 1200px) {
+      #footer #newsletter_block_left .warning_inline {
+        display: inline-block;
+        position: relative;
+        top: -35px;
+        margin-bottom: -35px;
+        left: 15px;
+        clear: none; } }
+  #footer #newsletter_block_left .form-group.email-error {
+    border-color: #f00; }
+  #footer #newsletter_block_left .form-group.email-valid {
+    border-color: #0C3; }
+
+#newsletter_block_left p.alert {
+  margin: 10px 0;
+  padding-left: 35px; }
+  #newsletter_block_left p.alert:before {
+    display: none; }
+  #newsletter_block_left p.alert .close {
+    font-size: 21px;
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    font-weight: normal;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    color: #f13340; }
+  #newsletter_block_left p.alert.alert-success .close {
+    color: #f2896d; }

@@ -1,0 +1,10 @@
+/* Top hook CSS */
+#htmlcontent_top {
+  margin-bottom: 30px; }
+  #htmlcontent_top ul li img {
+    max-width: 100%;
+    height: auto; }
+
+/* Left hook CSS */
+/* Right hook CSS */
+/* Footer hook CSS */

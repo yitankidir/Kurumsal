@@ -1,0 +1,1111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Projects\AtekKurumsal\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="assets/css/authentication.css">
+      <publishTime>12/02/2016 10:36:50</publishTime>
+    </File>
+    <File Include="assets/css/autoload/highdpi.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/autoload/jquery.bxslider.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/autoload/responsive-tables.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/autoload/uniform.default.css">
+      <publishTime>12/14/2016 11:25:20</publishTime>
+    </File>
+    <File Include="assets/css/cms.css">
+      <publishTime>01/03/2017 17:49:04</publishTime>
+    </File>
+    <File Include="assets/css/contact-form.css">
+      <publishTime>11/29/2016 10:19:32</publishTime>
+    </File>
+    <File Include="assets/css/cssSlider/settings.css">
+      <publishTime>12/20/2016 12:49:30</publishTime>
+    </File>
+    <File Include="assets/css/cssSlider/style.css">
+      <publishTime>01/23/2017 13:29:56</publishTime>
+    </File>
+    <File Include="assets/css/fonts/revicons.ttf">
+      <publishTime>12/13/2016 10:44:50</publishTime>
+    </File>
+    <File Include="assets/css/fonts/revicons.woff">
+      <publishTime>12/13/2016 10:54:42</publishTime>
+    </File>
+    <File Include="assets/css/global.css">
+      <publishTime>01/23/2017 16:20:08</publishTime>
+    </File>
+    <File Include="assets/css/modules/blockcart/blockcart.css">
+      <publishTime>01/03/2017 17:47:50</publishTime>
+    </File>
+    <File Include="assets/css/modules/blockcategories/blockcategories.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/modules/blockcontact/blockcontact.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/modules/blockcurrencies/blockcurrencies.css">
+      <publishTime>01/03/2017 17:47:50</publishTime>
+    </File>
+    <File Include="assets/css/modules/blocklanguages/blocklanguages.css">
+      <publishTime>01/03/2017 17:47:50</publishTime>
+    </File>
+    <File Include="assets/css/modules/blocklayered/blocklayered.css">
+      <publishTime>01/18/2017 14:56:54</publishTime>
+    </File>
+    <File Include="assets/css/modules/blocknewsletter/blocknewsletter.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/modules/blockpermanentlinks/blockpermanentlinks.css">
+      <publishTime>01/03/2017 17:47:50</publishTime>
+    </File>
+    <File Include="assets/css/modules/blocksearch/blocksearch.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/modules/blocktags/blocktags.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/modules/blockuserinfo/blockuserinfo.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/modules/blockviewed/blockviewed.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/modules/blockwishlist/blockwishlist.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/modules/homefeatured/homefeatured.css">
+      <publishTime>01/03/2017 17:47:50</publishTime>
+    </File>
+    <File Include="assets/css/modules/homeslider/homeslider.css">
+      <publishTime>01/03/2017 17:47:50</publishTime>
+    </File>
+    <File Include="assets/css/modules/productcomments/productcomments.css">
+      <publishTime>01/03/2017 17:47:52</publishTime>
+    </File>
+    <File Include="assets/css/modules/smartblog/css/smartblogstyle.css">
+      <publishTime>01/03/2017 17:47:52</publishTime>
+    </File>
+    <File Include="assets/css/modules/smartbloghomelatestnews/css/smartbloglatestnews.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/modules/smartblogtag/css/smartblogtags.css">
+      <publishTime>01/03/2017 17:47:52</publishTime>
+    </File>
+    <File Include="assets/css/modules/themeconfigurator/css/hooks.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/modules/themeconfigurator/css/live_configurator.css">
+      <publishTime>01/03/2017 17:47:52</publishTime>
+    </File>
+    <File Include="assets/css/modules/tmcategoryproducts/views/css/tmcategoryproducts.css">
+      <publishTime>01/04/2017 16:42:08</publishTime>
+    </File>
+    <File Include="assets/css/modules/tmheaderaccount/views/css/front.css">
+      <publishTime>01/03/2017 17:47:52</publishTime>
+    </File>
+    <File Include="assets/css/modules/tmmegalayout/views/css/tmmegalayout.css">
+      <publishTime>12/04/2016 01:12:48</publishTime>
+    </File>
+    <File Include="assets/css/modules/tmmegamenu/views/css/tmmegamenu.css">
+      <publishTime>01/04/2017 13:42:18</publishTime>
+    </File>
+    <File Include="assets/css/modules/tmmosaicproducts/views/css/tmmosaicproducts.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/modules/tmmosaicproducts/views/css/video/video-js.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/modules/tmnewsletter/views/css/tmnewsletter.css">
+      <publishTime>01/03/2017 17:47:52</publishTime>
+    </File>
+    <File Include="assets/css/modules/tmsearch/views/css/tmsearch.css">
+      <publishTime>01/03/2017 17:47:52</publishTime>
+    </File>
+    <File Include="assets/css/modules/tmsociallogin/views/css/front.css">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/css/PagedList.css">
+      <publishTime>01/19/2017 13:26:54</publishTime>
+    </File>
+    <File Include="assets/css/print.css">
+      <publishTime>01/09/2017 17:40:54</publishTime>
+    </File>
+    <File Include="assets/css/product.css">
+      <publishTime>01/03/2017 17:47:52</publishTime>
+    </File>
+    <File Include="assets/css/product_list.css">
+      <publishTime>01/03/2017 17:47:52</publishTime>
+    </File>
+    <File Include="assets/css/responsive.css">
+      <publishTime>12/27/2016 10:44:10</publishTime>
+    </File>
+    <File Include="assets/css/sitemap.css">
+      <publishTime>11/29/2016 09:55:06</publishTime>
+    </File>
+    <File Include="assets/css/skin8.css">
+      <publishTime>12/14/2016 17:51:04</publishTime>
+    </File>
+    <File Include="assets/css/stores.css">
+      <publishTime>12/02/2016 11:15:20</publishTime>
+    </File>
+    <File Include="assets/fonts/fl-outicons.woff">
+      <publishTime>11/25/2016 16:49:20</publishTime>
+    </File>
+    <File Include="assets/fonts/fontawesome-webfont.woff">
+      <publishTime>11/25/2016 16:50:06</publishTime>
+    </File>
+    <File Include="assets/img/ajax-loader-page.gif">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/img/cms/banner-topColumn1-.jpg">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/img/cms/home1-parallax-bg1.jpg">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/img/cms/our_team_1.jpg">
+      <publishTime>12/01/2016 14:53:06</publishTime>
+    </File>
+    <File Include="assets/img/cms/our_team_2.jpg">
+      <publishTime>12/01/2016 14:53:08</publishTime>
+    </File>
+    <File Include="assets/img/cms/our_team_3.jpg">
+      <publishTime>12/01/2016 14:53:12</publishTime>
+    </File>
+    <File Include="assets/img/cms/our_team_4.jpg">
+      <publishTime>12/01/2016 14:53:14</publishTime>
+    </File>
+    <File Include="assets/img/cms/parallax-img-3.jpg">
+      <publishTime>12/02/2016 12:31:28</publishTime>
+    </File>
+    <File Include="assets/img/contact-form.png">
+      <publishTime>11/29/2016 10:07:24</publishTime>
+    </File>
+    <File Include="assets/img/DortParca/lastikservisi.jpg">
+      <publishTime>01/03/2017 12:24:14</publishTime>
+    </File>
+    <File Include="assets/img/DortParca/mobilservis.jpg">
+      <publishTime>01/03/2017 12:24:14</publishTime>
+    </File>
+    <File Include="assets/img/DortParca/otoexpertizi.jpg">
+      <publishTime>01/03/2017 12:24:14</publishTime>
+    </File>
+    <File Include="assets/img/DortParca/otoservisi.jpg">
+      <publishTime>01/03/2017 12:24:14</publishTime>
+    </File>
+    <File Include="assets/img/favicon.ico">
+      <publishTime>11/25/2016 15:38:44</publishTime>
+    </File>
+    <File Include="assets/img/HaberResimleri/1-home-default.jpg">
+      <publishTime>01/03/2017 12:41:40</publishTime>
+    </File>
+    <File Include="assets/img/HaberResimleri/2-home-default.jpg">
+      <publishTime>01/03/2017 12:41:40</publishTime>
+    </File>
+    <File Include="assets/img/HaberResimleri/3-home-default.jpg">
+      <publishTime>01/03/2017 12:41:40</publishTime>
+    </File>
+    <File Include="assets/img/HaberResimleri/4-home-default.jpg">
+      <publishTime>01/03/2017 12:41:40</publishTime>
+    </File>
+    <File Include="assets/img/IkiParca/360.jpg">
+      <publishTime>01/03/2017 12:27:02</publishTime>
+    </File>
+    <File Include="assets/img/IkiParca/katalog.jpg">
+      <publishTime>01/03/2017 12:27:02</publishTime>
+    </File>
+    <File Include="assets/img/Logo/logoatek.png">
+      <publishTime>01/03/2017 12:13:54</publishTime>
+    </File>
+    <File Include="assets/img/Markalar/istirakler_11.jpg">
+      <publishTime>12/22/2016 12:26:12</publishTime>
+    </File>
+    <File Include="assets/img/Markalar/istirakler_13.jpg">
+      <publishTime>12/22/2016 12:26:12</publishTime>
+    </File>
+    <File Include="assets/img/Markalar/istirakler_14.jpg">
+      <publishTime>12/22/2016 12:26:12</publishTime>
+    </File>
+    <File Include="assets/img/p/2/4/24-home_default.jpg">
+      <publishTime>11/29/2016 13:31:10</publishTime>
+    </File>
+    <File Include="assets/img/p/2/4/24-tm_cart_default.jpg">
+      <publishTime>11/29/2016 13:31:10</publishTime>
+    </File>
+    <File Include="assets/img/p/2/4/24-tm_home_default.jpg">
+      <publishTime>11/29/2016 13:31:10</publishTime>
+    </File>
+    <File Include="assets/img/p/2/4/24-tm_large_default.jpg">
+      <publishTime>11/29/2016 13:31:10</publishTime>
+    </File>
+    <File Include="assets/img/p/2/4/25-tm_cart_default.jpg">
+      <publishTime>11/29/2016 13:31:10</publishTime>
+    </File>
+    <File Include="assets/img/p/2/4/26-tm_cart_default.jpg">
+      <publishTime>11/29/2016 13:31:10</publishTime>
+    </File>
+    <File Include="assets/img/p/2/4/27-tm_cart_default.jpg">
+      <publishTime>11/29/2016 13:31:10</publishTime>
+    </File>
+    <File Include="assets/img/p/2/4/28-tm_cart_default.jpg">
+      <publishTime>11/29/2016 13:31:10</publishTime>
+    </File>
+    <File Include="assets/img/p/2/4/29-tm_cart_default.jpg">
+      <publishTime>12/01/2016 11:00:46</publishTime>
+    </File>
+    <File Include="assets/img/p/2/4/30-tm_cart_default.jpg">
+      <publishTime>12/01/2016 11:00:54</publishTime>
+    </File>
+    <File Include="assets/img/p/2/4/caruzo.jpg">
+      <publishTime>01/11/2017 11:08:23</publishTime>
+    </File>
+    <File Include="assets/img/p/3/1/31-home_default.jpg">
+      <publishTime>11/30/2016 17:38:50</publishTime>
+    </File>
+    <File Include="assets/img/p/3/1/31-tm_home_default.jpg">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/img/p/3/7/37-home_default.jpg">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/img/p/3/7/37-tm_home_default.jpg">
+      <publishTime>12/02/2016 12:41:38</publishTime>
+    </File>
+    <File Include="assets/img/p/3/7/37-tm_small_default.jpg">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/img/p/4/4/44-home_default.jpg">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/img/p/4/4/44-tm_home_default.jpg">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/img/p/5/2/52-tm_home_default.jpg">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/img/p/5/2/52-tm_small_default.jpg">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/img/p/5/8/58-tm_home_default.jpg">
+      <publishTime>11/25/2016 15:22:14</publishTime>
+    </File>
+    <File Include="assets/img/PopulerUrun/background.jpg">
+      <publishTime>01/03/2017 12:36:44</publishTime>
+    </File>
+    <File Include="assets/img/PopulerUrun/hpj.png">
+      <publishTime>01/03/2017 12:33:24</publishTime>
+    </File>
+    <File Include="assets/img/PopulerUrun/pangea.png">
+      <publishTime>01/03/2017 12:33:24</publishTime>
+    </File>
+    <File Include="assets/img/PopulerUrun/robatek.png">
+      <publishTime>01/03/2017 12:33:24</publishTime>
+    </File>
+    <File Include="assets/img/Slide/background.png">
+      <publishTime>12/15/2016 16:08:26</publishTime>
+    </File>
+    <File Include="assets/img/Slide/garaj-montaj3-1_0000_tavan-aydınlatma.png">
+      <publishTime>12/15/2016 16:08:26</publishTime>
+    </File>
+    <File Include="assets/img/Slide/garaj-montaj3-1_0001_resepsiyon-lift.png">
+      <publishTime>12/15/2016 16:08:26</publishTime>
+    </File>
+    <File Include="assets/img/Slide/garaj-montaj3-1_0002_jant-d]zeltme.png">
+      <publishTime>12/15/2016 16:08:26</publishTime>
+    </File>
+    <File Include="assets/img/Slide/garaj-montaj3-1_0003_rot-lifti.png">
+      <publishTime>12/15/2016 16:08:26</publishTime>
+    </File>
+    <File Include="assets/img/Slide/garaj-montaj3-1_0005_robatek.png">
+      <publishTime>12/15/2016 16:08:26</publishTime>
+    </File>
+    <File Include="assets/img/Slide/garaj-montaj3-1_0006_eyelight.png">
+      <publishTime>12/15/2016 16:08:26</publishTime>
+    </File>
+    <File Include="assets/img/Slide/garaj-montaj3-1_0007_blacktech.png">
+      <publishTime>12/15/2016 16:08:26</publishTime>
+    </File>
+    <File Include="assets/img/Slide/garaj-montaj3-1_0008_toptul.png">
+      <publishTime>12/15/2016 16:08:26</publishTime>
+    </File>
+    <File Include="assets/img/Slide/garaj-montaj3_0000_air-tower.png">
+      <publishTime>12/15/2016 16:08:26</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/1.jpg">
+      <publishTime>01/03/2017 16:35:42</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/2.jpg">
+      <publishTime>01/03/2017 16:35:42</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/3.jpg">
+      <publishTime>01/03/2017 16:35:42</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/4.jpg">
+      <publishTime>01/03/2017 16:35:42</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/5.jpg">
+      <publishTime>01/03/2017 16:35:42</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/6.jpg">
+      <publishTime>01/03/2017 16:35:42</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/61655934adb935fd078d7ddb03bac1adae0940ea_banner-top-img1.jpg">
+      <publishTime>01/03/2017 12:18:59</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/85231acb5632bc64826a3d0f4b8d2d66d2f8973c_Home_04.jpg">
+      <publishTime>01/03/2017 12:18:59</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/c29e0b0bf21e64a547fab760c23006035b579c4c_banner-top-img3.jpg">
+      <publishTime>01/03/2017 12:18:59</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/fd7485d1396644196a715012d14c87140f7906e3_banner-top-img2.jpg">
+      <publishTime>01/03/2017 12:18:59</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/sd/atekakademi.jpg">
+      <publishTime>02/06/2017 11:41:27</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/sd/atekbulgarca.jpg">
+      <publishTime>02/06/2017 11:41:27</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/sd/atekengineering.jpg">
+      <publishTime>02/06/2017 11:41:27</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/sd/ateklift.jpg">
+      <publishTime>02/06/2017 11:41:27</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/sd/atekmakina.jpg">
+      <publishTime>02/06/2017 11:41:27</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/sd/cityhotel.jpg">
+      <publishTime>02/06/2017 11:41:27</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/yeni/1.jpg">
+      <publishTime>01/09/2017 14:00:28</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/yeni/2.jpg">
+      <publishTime>01/09/2017 14:00:28</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/yeni/3.jpg">
+      <publishTime>01/09/2017 14:00:28</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/yeni/4.jpg">
+      <publishTime>01/09/2017 14:00:28</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/yeni/5.jpg">
+      <publishTime>01/09/2017 14:00:28</publishTime>
+    </File>
+    <File Include="assets/img/SlideAltKisim/yeni/6.jpg">
+      <publishTime>01/09/2017 14:00:28</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide1/rs-slider4-bg.jpg">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide1/rs-slider4-img1.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide1/rs-slider4-img10.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide1/rs-slider4-img11.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide1/rs-slider4-img12.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide1/rs-slider4-img2 %281%29.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide1/rs-slider4-img2.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide1/rs-slider4-img3.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide1/rs-slider4-img4.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide1/rs-slider4-img5.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide1/rs-slider4-img6.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide1/rs-slider4-img7.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide1/rs-slider4-img8.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide1/rs-slider4-img9.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide2/rs-slider1-bg.jpg">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide2/rs-slider1-phone-bg.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide2/rs-slider1-phone.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-bg.jpg">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-fifteen.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-fourteen.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-homepage1.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-homepage2.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-homepage3.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-homepage4.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-img.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-quadrate1.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-quadrate2.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-quadrate3.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-quadrate4.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-quadrate5.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-quadrate6.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-quadrate7.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-thirteen.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide3/rs-slider2-twelve.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide4/rs-slider3-bg.jpg">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide4/rs-slider3-coin.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide4/rs-slider3-pig.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/Slider/Slide4/rs-slider3-pig2.png">
+      <publishTime>12/13/2016 12:29:18</publishTime>
+    </File>
+    <File Include="assets/img/su/1-tm_medium_default.jpg">
+      <publishTime>12/01/2016 16:20:08</publishTime>
+    </File>
+    <File Include="assets/img/su/4-tm_medium_default.jpg">
+      <publishTime>12/01/2016 16:20:00</publishTime>
+    </File>
+    <File Include="assets/img/su/5-tm_medium_default.jpg">
+      <publishTime>12/01/2016 16:20:12</publishTime>
+    </File>
+    <File Include="assets/img/su/6-tm_medium_default.jpg">
+      <publishTime>12/01/2016 16:20:44</publishTime>
+    </File>
+    <File Include="assets/img/su/7-tm_medium_default.jpg">
+      <publishTime>12/01/2016 16:20:16</publishTime>
+    </File>
+    <File Include="assets/img/su/8-tm_medium_default.jpg">
+      <publishTime>12/01/2016 16:20:04</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/Allegro-Mobil.jpg">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/BRAVA-JUMBO-7300.jpg">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/BRAVA-MAXI-7000.jpg">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/caruzo.jpg">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/newallegro.jpg">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/newallegroeco.jpg">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/PIKOLA-PLUS-41PLUS00.jpg">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/riviera-43-00.jpg">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/riviera-ti-plus-43ti00plus.jpg">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/Robatek.jpg">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/SPEEDY-14-56.jpg">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/SWING-14-30.jpg">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/zanini-4700.JPG">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/zanini-ti-plus_1.JPG">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/zanitro-n2-plus.jpg">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/img/Urunler/LastikSökmeTakma/zanitro-n2.jpg">
+      <publishTime>01/19/2017 12:24:34</publishTime>
+    </File>
+    <File Include="assets/js/autoload/10-bootstrap.min.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/autoload/14-device.min.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/autoload/15-jquery.total-storage.min.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/autoload/15-jquery.uniform-modified.js">
+      <publishTime>11/30/2016 13:43:24</publishTime>
+    </File>
+    <File Include="assets/js/autoload/16-jquery.scrollmagic.min.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/autoload/17-jquery.scrollmagic.debug.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/autoload/18-TimelineMax.min.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/autoload/19-TweenMax.min.js">
+      <publishTime>01/04/2017 14:04:12</publishTime>
+    </File>
+    <File Include="assets/js/autoload/20-jquery.bxslider.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/autoload/21-modernizr_v2_7_2.min.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/autoload/22-jquery.jscrollpane.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/category.js">
+      <publishTime>01/16/2017 10:28:46</publishTime>
+    </File>
+    <File Include="assets/js/contact-form.js">
+      <publishTime>11/30/2016 11:27:32</publishTime>
+    </File>
+    <File Include="assets/js/global.js">
+      <publishTime>01/04/2017 15:57:04</publishTime>
+    </File>
+    <File Include="assets/js/index.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/jquery.themepunch.plugins.min.js">
+      <publishTime>01/04/2017 14:05:56</publishTime>
+    </File>
+    <File Include="assets/js/jquery.themepunch.revolution.min.js">
+      <publishTime>12/13/2016 10:52:22</publishTime>
+    </File>
+    <File Include="assets/js/jquery/jquery-1.11.0.min.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/jquery/jquery-migrate-1.2.1.min.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/jquery/jquery.unobtrusive-ajax.js">
+      <publishTime>01/23/2017 14:41:46</publishTime>
+    </File>
+    <File Include="assets/js/jquery/jquery.unobtrusive-ajax.min.js">
+      <publishTime>01/23/2017 14:41:46</publishTime>
+    </File>
+    <File Include="assets/js/jquery/jquery.validate.unobtrusive.bootstrap.js">
+      <publishTime>01/23/2017 14:46:36</publishTime>
+    </File>
+    <File Include="assets/js/jquery/jquery.validate.unobtrusive.bootstrap.min.js">
+      <publishTime>01/23/2017 14:46:36</publishTime>
+    </File>
+    <File Include="assets/js/jquery/plugins/autocomplete/jquery.autocomplete.css">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/jquery/plugins/autocomplete/jquery.autocomplete.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/jquery/plugins/bxslider/images/bx_loader.gif">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/jquery/plugins/bxslider/jquery.bxslider.css">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/jquery/plugins/bxslider/jquery.bxslider.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/jquery/plugins/fancybox/jquery.fancybox.css">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/jquery/plugins/fancybox/jquery.fancybox.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/jquery/plugins/jquery.easing.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/jquery/plugins/jquery.scrollTo.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/jquery/plugins/jquery.serialScroll.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/main.js">
+      <publishTime>12/19/2016 18:37:02</publishTime>
+    </File>
+    <File Include="assets/js/map.js">
+      <publishTime>12/02/2016 11:20:50</publishTime>
+    </File>
+    <File Include="assets/js/modules/blockcart/ajax-cart.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/modules/blocknewsletter/blocknewsletter.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/modules/blocksearch/blocksearch.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/modules/blockwishlist/js/ajax-wishlist.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/modules/homeslider/js/homeslider.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/modules/tmmegamenu/views/js/hoverIntent.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/modules/tmmegamenu/views/js/superfish.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/modules/tmmegamenu/views/js/tmmegamenu.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/modules/tmrelatedproducts/views/css/tmrelatedproducts.css">
+      <publishTime>01/09/2017 18:02:38</publishTime>
+    </File>
+    <File Include="assets/js/modules/tmrelatedproducts/views/js/tmrelatedproducts.js">
+      <publishTime>01/09/2017 17:57:58</publishTime>
+    </File>
+    <File Include="assets/js/modules/tmsearch/views/js/tmsearch.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/js/product.js">
+      <publishTime>11/30/2016 12:51:14</publishTime>
+    </File>
+    <File Include="assets/js/products-comparison.js">
+      <publishTime>11/29/2016 10:12:16</publishTime>
+    </File>
+    <File Include="assets/js/script.js">
+      <publishTime>12/13/2016 12:40:12</publishTime>
+    </File>
+    <File Include="assets/js/tools.js">
+      <publishTime>11/29/2016 10:17:06</publishTime>
+    </File>
+    <File Include="assets/js/tools/treeManagement.js">
+      <publishTime>01/04/2017 14:15:26</publishTime>
+    </File>
+    <File Include="assets/js/validate.js">
+      <publishTime>11/25/2016 15:22:16</publishTime>
+    </File>
+    <File Include="assets/modules/blockfacebook/blockfacebook.js">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/blockfacebook/css/blockfacebook.css">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/homeslider/925ad3bc0432f01488f427f906b9c76ca6ed2257_slider-img2.jpg">
+      <publishTime>12/07/2016 14:08:22</publishTime>
+    </File>
+    <File Include="assets/modules/homeslider/eabc851ce279a1a5a3b16880999d7093a67b4025_slider-img3.jpg">
+      <publishTime>12/07/2016 14:08:20</publishTime>
+    </File>
+    <File Include="assets/modules/homeslider/ee98f45f06d72a795776fd58d0c3a65bf64eae74_slider-img1.jpg">
+      <publishTime>12/07/2016 14:08:26</publishTime>
+    </File>
+    <File Include="assets/modules/productcomments/js/jquery.textareaCounter.plugin.js">
+      <publishTime>01/09/2017 17:45:10</publishTime>
+    </File>
+    <File Include="assets/modules/productcomments/js/productcomments.js">
+      <publishTime>11/30/2016 13:03:02</publishTime>
+    </File>
+    <File Include="assets/modules/smartblog/images/1-home-default.jpg">
+      <publishTime>11/29/2016 11:38:44</publishTime>
+    </File>
+    <File Include="assets/modules/smartblog/images/1-home-small.jpg">
+      <publishTime>11/29/2016 11:38:44</publishTime>
+    </File>
+    <File Include="assets/modules/smartblog/images/2-home-default.jpg">
+      <publishTime>11/29/2016 11:38:44</publishTime>
+    </File>
+    <File Include="assets/modules/smartblog/images/2-home-small.jpg">
+      <publishTime>11/29/2016 11:38:44</publishTime>
+    </File>
+    <File Include="assets/modules/smartblog/images/2-single-default.jpg">
+      <publishTime>12/01/2016 13:27:52</publishTime>
+    </File>
+    <File Include="assets/modules/smartblog/images/3-home-default.jpg">
+      <publishTime>11/29/2016 11:38:44</publishTime>
+    </File>
+    <File Include="assets/modules/smartblog/images/3-home-small.jpg">
+      <publishTime>11/29/2016 11:38:44</publishTime>
+    </File>
+    <File Include="assets/modules/smartblog/images/3-single-default.jpg">
+      <publishTime>12/01/2016 13:26:26</publishTime>
+    </File>
+    <File Include="assets/modules/smartblog/images/4-home-default.jpg">
+      <publishTime>11/29/2016 11:38:44</publishTime>
+    </File>
+    <File Include="assets/modules/smartblog/images/4-home-small.jpg">
+      <publishTime>11/29/2016 11:38:44</publishTime>
+    </File>
+    <File Include="assets/modules/smartblog/images/4-single-default.jpg">
+      <publishTime>11/30/2016 11:33:04</publishTime>
+    </File>
+    <File Include="assets/modules/themeconfiglink/views/css/themeconfiglink.css">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/themeconfiglink/views/js/themeconfiglink.js">
+      <publishTime>11/30/2016 11:29:34</publishTime>
+    </File>
+    <File Include="assets/modules/tmdaydeal/views/css/tmdaydeal.css">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmdaydeal/views/js/jquery.countdown.js">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmdaydeal/views/js/tmdaydeal.js">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmheaderaccount/views/js/front.js">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmhtmlcontent/img/2f4c501332e28c5e79290dc233eb8dda203f3030_banner-home1-img2.jpg">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmhtmlcontent/img/360.jpg">
+      <publishTime>01/02/2017 12:55:28</publishTime>
+    </File>
+    <File Include="assets/modules/tmhtmlcontent/img/78f56482d1e66c810313cfc34b8ae25e1c8cca98_banner-top4.jpg">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmhtmlcontent/img/katalog.jpg">
+      <publishTime>01/02/2017 12:53:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmmediaparallax/views/css/rd-parallax.css">
+      <publishTime>01/02/2017 13:27:52</publishTime>
+    </File>
+    <File Include="assets/modules/tmmediaparallax/views/css/tmmediaparallax.css">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmmediaparallax/views/js/jquery.rd-parallax.min.js">
+      <publishTime>01/04/2017 16:32:34</publishTime>
+    </File>
+    <File Include="assets/modules/tmmediaparallax/views/js/jquery.vide.min.js">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmmediaparallax/views/js/jquery.youtubebackground.js">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmmediaparallax/views/js/tmmediaparallax.js">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmmegalayout/views/css/layouts/Footer1.css">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmmegalayout/views/css/layouts/Header1.css">
+      <publishTime>12/08/2016 10:37:00</publishTime>
+    </File>
+    <File Include="assets/modules/tmmegalayout/views/css/layouts/Header2.css">
+      <publishTime>01/03/2017 17:47:52</publishTime>
+    </File>
+    <File Include="assets/modules/tmmegalayout/views/css/layouts/HeaderAnasayfa.css">
+      <publishTime>01/03/2017 17:47:52</publishTime>
+    </File>
+    <File Include="assets/modules/tmmegalayout/views/css/layouts/Home1.css">
+      <publishTime>01/04/2017 16:52:56</publishTime>
+    </File>
+    <File Include="assets/modules/tmmegalayout/views/css/layouts/TopColumn1.css">
+      <publishTime>01/03/2017 17:47:52</publishTime>
+    </File>
+    <File Include="assets/modules/tmmegalayout/views/css/layouts/TopColumn2.css">
+      <publishTime>12/07/2016 13:51:44</publishTime>
+    </File>
+    <File Include="assets/modules/tmmegalayout/views/js/layouts/Home1.js">
+      <publishTime>12/19/2016 13:06:10</publishTime>
+    </File>
+    <File Include="assets/modules/tmmegalayout/views/js/tmmegalayout.js">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmmegamenu/images/1.jpg">
+      <publishTime>12/19/2016 17:48:28</publishTime>
+    </File>
+    <File Include="assets/modules/tmmegamenu/images/2.jpg">
+      <publishTime>12/19/2016 17:48:30</publishTime>
+    </File>
+    <File Include="assets/modules/tmmegamenu/images/3.jpg">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmmegamenu/images/730f5a492528c489f1cece98db26eadb79db3a57_banner-menu.jpg">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmmegamenu/views/js/hoverIntent.js">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmmegamenu/views/js/superfish.js">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmmosaicproducts/views/css/video/video-js.css">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmmosaicproducts/views/js/tmmosaicproducts.js">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmmosaicproducts/views/js/video/video.js">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmnewsletter/views/js/tmnewsletter.js">
+      <publishTime>11/26/2016 14:49:50</publishTime>
+    </File>
+    <File Include="assets/modules/tmproductvideos/views/css/tmproductvideos.css">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmproductvideos/views/css/video/video-js.css">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmproductvideos/views/js/video/video.js">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="assets/modules/tmproductzoomer/views/js/jquery.ez-plus.js">
+      <publishTime>11/30/2016 12:38:12</publishTime>
+    </File>
+    <File Include="assets/modules/tmproductzoomer/views/js/tmproductzoomer.js">
+      <publishTime>11/30/2016 13:30:12</publishTime>
+    </File>
+    <File Include="assets/modules/tmsociallogin/views/js/front.js">
+      <publishTime>11/25/2016 16:15:46</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>11/24/2016 16:26:56</publishTime>
+    </File>
+    <File Include="bin/AtekKurumsal.dll">
+      <publishTime>02/06/2017 11:57:54</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>12/09/2016 12:14:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>11/24/2016 16:26:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/24/2016 16:26:58</publishTime>
+    </File>
+    <File Include="bin/PagedList.dll">
+      <publishTime>01/19/2017 13:26:52</publishTime>
+    </File>
+    <File Include="bin/PagedList.Mvc.dll">
+      <publishTime>01/19/2017 13:26:52</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/24/2016 16:26:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/24/2016 16:26:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/24/2016 16:26:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/24/2016 16:26:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/24/2016 16:26:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/24/2016 16:26:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/24/2016 16:26:56</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>11/24/2016 16:26:56</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>11/24/2016 16:26:52</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/24/2016 16:26:52</publishTime>
+    </File>
+    <File Include="hmtlTemp/AboutUs.html">
+      <publishTime>12/01/2016 17:16:22</publishTime>
+    </File>
+    <File Include="hmtlTemp/AboutUs_1.html">
+      <publishTime>12/02/2016 11:04:48</publishTime>
+    </File>
+    <File Include="hmtlTemp/AnlaşmalıKurum.html">
+      <publishTime>12/01/2016 16:21:56</publishTime>
+    </File>
+    <File Include="hmtlTemp/Ask.html">
+      <publishTime>12/01/2016 17:18:18</publishTime>
+    </File>
+    <File Include="hmtlTemp/Blog.html">
+      <publishTime>12/01/2016 13:35:42</publishTime>
+    </File>
+    <File Include="hmtlTemp/BlogDetails.html">
+      <publishTime>12/12/2016 15:22:32</publishTime>
+    </File>
+    <File Include="hmtlTemp/Contact.html">
+      <publishTime>12/01/2016 13:14:48</publishTime>
+    </File>
+    <File Include="hmtlTemp/index.html">
+      <publishTime>12/16/2016 15:01:14</publishTime>
+    </File>
+    <File Include="hmtlTemp/index2.html">
+      <publishTime>12/23/2016 13:12:51</publishTime>
+    </File>
+    <File Include="hmtlTemp/Login.html">
+      <publishTime>12/02/2016 10:52:40</publishTime>
+    </File>
+    <File Include="hmtlTemp/OurStore.html">
+      <publishTime>12/14/2016 12:07:11</publishTime>
+    </File>
+    <File Include="hmtlTemp/ProductDetails.html">
+      <publishTime>12/01/2016 12:14:42</publishTime>
+    </File>
+    <File Include="hmtlTemp/ProductList.html">
+      <publishTime>01/06/2017 12:06:48</publishTime>
+    </File>
+    <File Include="hmtlTemp/ShoppingCart.html">
+      <publishTime>12/01/2016 17:05:14</publishTime>
+    </File>
+    <File Include="hmtlTemp/Sitemap.html">
+      <publishTime>12/01/2016 12:43:14</publishTime>
+    </File>
+    <File Include="hmtlTemp/Zslider.html">
+      <publishTime>12/16/2016 16:54:24</publishTime>
+    </File>
+    <File Include="hmtlTemp/üründetailss.html">
+      <publishTime>01/09/2017 18:05:05</publishTime>
+    </File>
+    <File Include="Models/AtekKurumsal.edmx.diagram">
+      <publishTime>02/05/2017 21:55:08</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/23/2017 14:46:36</publishTime>
+    </File>
+    <File Include="Views/Haber/BasındaBiz.cshtml">
+      <publishTime>12/12/2016 15:03:32</publishTime>
+    </File>
+    <File Include="Views/Haber/Blog.cshtml">
+      <publishTime>12/12/2016 15:37:14</publishTime>
+    </File>
+    <File Include="Views/Haber/HaberDetay.cshtml">
+      <publishTime>12/14/2016 10:09:00</publishTime>
+    </File>
+    <File Include="Views/Haber/Index.cshtml">
+      <publishTime>12/12/2016 15:34:08</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>12/23/2016 11:57:44</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>12/14/2016 17:53:32</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>02/06/2017 11:49:16</publishTime>
+    </File>
+    <File Include="Views/Home/Location.cshtml">
+      <publishTime>12/15/2016 09:33:42</publishTime>
+    </File>
+    <File Include="Views/Home/SSS.cshtml">
+      <publishTime>12/14/2016 10:31:12</publishTime>
+    </File>
+    <File Include="Views/Home/Vizyon.cshtml">
+      <publishTime>12/12/2016 14:40:48</publishTime>
+    </File>
+    <File Include="Views/Home/_AltKategorileriListele.cshtml">
+      <publishTime>02/05/2017 16:10:18</publishTime>
+    </File>
+    <File Include="Views/Home/_AnaBasliklar.cshtml">
+      <publishTime>02/05/2017 16:10:16</publishTime>
+    </File>
+    <File Include="Views/Home/_GenisAltKategori.cshtml">
+      <publishTime>02/05/2017 16:10:16</publishTime>
+    </File>
+    <File Include="Views/Home/_GenisAltKategoriList.cshtml">
+      <publishTime>02/05/2017 16:10:12</publishTime>
+    </File>
+    <File Include="Views/Home/_Logo.cshtml">
+      <publishTime>01/02/2017 15:06:14</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>11/24/2016 16:26:52</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>01/23/2017 16:25:36</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutÜrün.cshtml">
+      <publishTime>02/03/2017 10:41:32</publishTime>
+    </File>
+    <File Include="Views/Urun/Index.cshtml">
+      <publishTime>02/03/2017 17:57:26</publishTime>
+    </File>
+    <File Include="Views/Urun/UrunDetay.cshtml">
+      <publishTime>01/11/2017 10:48:22</publishTime>
+    </File>
+    <File Include="Views/Urun/_AltFilters.cshtml">
+      <publishTime>02/06/2017 11:56:13</publishTime>
+    </File>
+    <File Include="Views/Urun/_FilterSidebar.cshtml">
+      <publishTime>02/01/2017 10:24:46</publishTime>
+    </File>
+    <File Include="Views/Urun/_ÜrünListele.cshtml">
+      <publishTime>01/31/2017 12:31:42</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>11/24/2016 16:26:52</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>11/24/2016 16:26:52</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/06/2017 11:57:55</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

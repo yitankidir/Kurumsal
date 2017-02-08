@@ -1,0 +1,13 @@
+﻿@model IEnumerable<AtekKurumsal.Models.Kategori>
+@using AtekKurumsal.Models;
+@{
+    KategoriAgac tree = new KategoriAgac();
+}
+
+
+@foreach (var item in Model)
+{
+    <li class="category">
+        <a href="" title="@item.KategoriAdi">@item.KategoriAdi</a>
+    </li>
+}

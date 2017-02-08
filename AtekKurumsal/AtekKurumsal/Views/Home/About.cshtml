@@ -1,0 +1,179 @@
+﻿@model IEnumerable<AtekKurumsal.Models.Markalar>
+
+<body id="cms" class="cms cms-4 cms-about-us hide-left-column hide-right-column lang_en  one-column">
+
+    <div id="page">
+        <div id="preloader"></div>
+
+        <div class="columns-container">
+
+            <div class="breadcrumb clearfix">
+                <ul>
+                    <li class="home">
+                        <a class="home" href="" title="Return to Home">
+                            <i class="fa fa-home"></i>
+                        </a>
+                    </li>
+                    <li class="last">Hakkımızda</li>
+                </ul>
+            </div>
+
+            <div class="page-wrap">
+
+                <div id="columns" class="container">
+                    <div class="row">
+                        <a href="#" id="home-scroll"></a>
+                        <div class="large-left col-sm-12">
+                            <div class="row">
+                                <div id="center_column" class="center_column col-xs-12 col-sm-12">
+
+                                    <h1 style="text-align:center;">Hakkımızda</h1>
+                                    <h3 style="text-align:center;">Catering to your requirements, handling your needs with care</h3>
+                                    <p style="text-align:center; font-weight:bold; font-family:Verdana">
+                                        Our store is more than just another average online retailer. We sell not only top quality products, but give our customers a positive online shopping experience. Forget about struggling to do everything at once: taking care of the family, running your business, walking your dog, cleaning the house, doing the shopping, etc. Purchase the goods you need every day or just like in a few clicks or taps, depending on the device you use to access the Internet. We work to make your life more enjoyable.Our store is more than just another average online retailer. We sell not only top quality products, but give our customers a positive online shopping experience. Forget about struggling to do everything at once: taking care of the family, running your business, walking your dog, cleaning the house, doing the shopping, etc. Purchase the goods you need every day or just like in a few clicks or taps, depending on the device you use to access the Internet. We work to make your life more enjoyable
+                                        <br /><br /><br />
+                                    </p>
+                                    <p style="text-align:center; font-weight:bold; font-family:Verdana">
+                                        Our store is more than just another average online retailer. We sell not only top quality products, but give our customers a positive online shopping experience. Forget about struggling to do everything at once: taking care of the family, running your business, walking your dog, cleaning the house, doing the shopping, etc. Purchase the goods you need every day or just like in a few clicks or taps, depending on the device you use to access the Internet. We work to make your life more enjoyable.Our store is more than just another average online retailer. We sell not only top quality products, but give our customers a positive online shopping experience. Forget about struggling to do everything at once: taking care of the family, running your business, walking your dog, cleaning the house, doing the shopping, etc. Purchase the goods you need every day or just like in a few clicks or taps, depending on the device you use to access the Internet. We work to make your life more enjoyable
+                                        <br /><br /><br />
+                                    </p>
+
+
+                                    <div class="border_bottom2">
+                                        <ul class="row list-4">
+                                            <li class="col-xs-4 fa fa-search">
+                                                <h3>For convenience of choice</h3>
+                                                <p>We think about the convenience of your choice. Our products are supplied with star rating that should help hesitant buyers to take a decision. What’s more, you can search our site if you know exactly what you are looking for or use a bunch of different filters that will considerably save your time and efforts.</p>
+                                            </li>
+                                            <li class="col-xs-4 fa fa-car">
+                                                <h3>Delivery products to all regions</h3>
+                                                <p>We deliver our goods worldwide. No matter where you live, your order will be shipped in time and delivered right to your door or to any other location you have stated. The packages are handled with utmost care, so the ordered products will be handed to you safe and sound, just like you expect them to be.</p>
+                                            </li>
+                                            <li class="col-xs-4 fa fa-thumbs-up">
+                                                <h3>The highest quality of products</h3>
+                                                <p>We guarantee the highest quality of the products we sell. Several decades of successful operation and millions of happy customers let us feel certain about that. Besides, all items we sell pass thorough quality control, so no characteristics mismatch can escape the eye of our professionals.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="row it_TXBFAWSSFNPS ">
+                                        <div class="it_QKKTTDBYKWMD col-xs-12   col-lg-12 container">
+                                            <div class="module ">
+                                                <section id="block-category-1_12" class="block category-block">
+                                                    <h4 class="title_block"><a href=""> Referanslarımız     </a></h4>
+
+                                                    <ul class="product_list grid row">
+                                                        @foreach (var item in Model)
+                                                        {
+
+                                                            <li class="ajax_block_product  col-xs-12 col-sm-6 col-md-4 first-in-line last-line first-item-of-tablet-line last-item-of-mobile-line">
+                                                                <div class="product-container">
+                                                                    <div class="left-block">
+
+                                                                        <div class="product-image-container">
+                                                                            <a class="product_img_link">
+                                                                                <img class="replace-2x img-responsive" src="@item.Image" title="@item.MarkaAciklama" itemprop="image" />
+                                                                            </a>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="right-block">
+                                                                        <h5 itemprop="name">
+                                                                            <a class="product-name" href="" itemprop="url">
+                                                                                <span class="grid-name">@item.MarkaAdi</span>
+                                                                            </a>
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        }
+                                                    </ul>
+
+                                                </section>
+
+                                                <script type="text/javascript">
+                                $(document).ready(function () {
+                                    setNbCatItems();
+                                    tmCategoryCarousel1_12 = $('#block-category-1_12 > ul').bxSlider({
+                                        responsive: true,
+                                        useCSS: false,
+                                        minSlides: tm_cps_carousel_nb_new,
+                                        maxSlides: tm_cps_carousel_nb_new,
+                                        slideWidth: tm_cps_carousel_slide_width,
+                                        slideMargin: tm_cps_carousel_slide_margin,
+                                        infiniteLoop: tm_cps_carousel_loop,
+                                        hideControlOnEnd: tm_cps_carousel_hide_control,
+                                        randomStart: tm_cps_carousel_random,
+                                        moveSlides: tm_cps_carousel_item_scroll,
+                                        pager: tm_cps_carousel_pager,
+                                        autoHover: tm_cps_carousel_auto_hover,
+                                        auto: tm_cps_carousel_auto,
+                                        speed: tm_cps_carousel_speed,
+                                        pause: tm_cps_carousel_auto_pause,
+                                        controls: tm_cps_carousel_control,
+                                        autoControls: tm_cps_carousel_auto_control,
+                                        startText: '',
+                                        stopText: '',
+                                    });
+
+                                    var tm_cps_doit;
+                                    $(window).resize(function () {
+                                        clearTimeout(tm_cps_doit);
+                                        tm_cps_doit = setTimeout(function () {
+                                            resizedwtm_cps1_12();
+                                        }, 201);
+                                    });
+                                });
+                                function resizedwtm_cps1_12() {
+                                    setNbCatItems();
+                                    tmCategoryCarousel1_12.reloadSlider({
+                                        responsive: true,
+                                        useCSS: false,
+                                        minSlides: tm_cps_carousel_nb_new,
+                                        maxSlides: tm_cps_carousel_nb_new,
+                                        slideWidth: tm_cps_carousel_slide_width,
+                                        slideMargin: tm_cps_carousel_slide_margin,
+                                        infiniteLoop: tm_cps_carousel_loop,
+                                        hideControlOnEnd: tm_cps_carousel_hide_control,
+                                        randomStart: tm_cps_carousel_random,
+                                        moveSlides: tm_cps_carousel_item_scroll,
+                                        pager: tm_cps_carousel_pager,
+                                        autoHover: tm_cps_carousel_auto_hover,
+                                        auto: tm_cps_carousel_auto,
+                                        speed: tm_cps_carousel_speed,
+                                        pause: tm_cps_carousel_auto_pause,
+                                        controls: tm_cps_carousel_control,
+                                        autoControls: tm_cps_carousel_auto_control,
+                                        startText: '',
+                                        stopText: '',
+                                    });
+                                }
+
+                                function setNbCatItems() {
+                                    if ($('.category-block').width() < 400)
+                                        tm_cps_carousel_nb_new = 1;
+                                    if ($('.category-block').width() >= 400)
+                                        tm_cps_carousel_nb_new = 2;
+                                    if ($('.category-block').width() >= 560)
+                                        tm_cps_carousel_nb_new = 3;
+                                    if ($('.category-block').width() > 840)
+                                        tm_cps_carousel_nb_new = tm_cps_carousel_nb;
+                                }
+                                                </script>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<AtekKurumsal.Models.Kategori>
+@using AtekKurumsal.Models;
+@{
+    KategoriAgac tree = new KategoriAgac();
+
+}
+
+<script type="text/javascript">
+    function resim_degis(int) {
+        var res = document.getElementById("rsm");
+        var res_dizi = new Array();
+        res_dizi[0] = "/assets/modules/tmmegamenu/images/1.jpg";
+        res_dizi[1] = "/assets/modules/tmmegamenu/images/3.jpg";
+        res_dizi[2] = "/assets/modules/tmmegamenu/images/2.jpg";
+        res_dizi[3] = "/assets/modules/tmmegamenu/images/1.jpg"
+        res.src = res_dizi[int];
+    }
+</script>
+
+
+@foreach (var item in Model)
+{
+
+    <div id="column-1-1-1" class="megamenu-col megamenu-col-1-1 col-sm-2 ">
+        <ul class="content">
+            <li class="category">
+                <a href="" onmouseover="resim_degis(@item.ResimSira)" title="@item.KategoriAdi ürünleri"> @item.KategoriAdi </a>
+                @if (tree.AltKategorileriGetir(item.KategoriId).Select(x => x.ÜstKategoriId).Count() == 0)
+                {
+
+                }
+                else
+                {
+                    <ul>
+
+                        @Html.Action("_GenisAltKategoriList", "Home", new { ÜstKategoriId = item.KategoriId })
+
+                    </ul>
+
+                }
+
+            </li>
+        </ul>
+    </div>
+
+}
+
+
+<div id="column-1-1-5" class="megamenu-col megamenu-col-1-5 col-sm-4  full_with_on_mobile">
+    <ul class="content">
+        <li class="megamenu_banner banner-menu">
+            <a href="index.php?id_category=5&amp;controller=category">
+                <img id="rsm" src="" />
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+

@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KurumsalSiteAtekModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AltÖzellikler">
+    <Key>
+      <PropertyRef Name="AltÖzellikId" />
+    </Key>
+    <Property Name="AltÖzellikId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ÖzellikId" Type="int" />
+    <Property Name="AltÖzellikAdi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Blog">
+    <Key>
+      <PropertyRef Name="BlogId" />
+    </Key>
+    <Property Name="BlogId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BlogBaslik" Type="nvarchar" MaxLength="100" />
+    <Property Name="Blogİcerik" Type="nvarchar(max)" />
+    <Property Name="Image" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Haberler">
+    <Key>
+      <PropertyRef Name="HaberId" />
+    </Key>
+    <Property Name="HaberId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HaberBaslik" Type="nvarchar" MaxLength="100" />
+    <Property Name="HaberAciklama" Type="nvarchar(max)" />
+    <Property Name="Image" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="PostedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="İletisim">
+    <Key>
+      <PropertyRef Name="İletisimId" />
+    </Key>
+    <Property Name="İletisimId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adres" Type="nvarchar(max)" />
+    <Property Name="Telefon" Type="nvarchar(max)" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Kategori">
+    <Key>
+      <PropertyRef Name="KategoriId" />
+    </Key>
+    <Property Name="KategoriId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KategoriAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="ÜstKategoriId" Type="int" />
+    <Property Name="ResimSira" Type="smallint" />
+    <Property Name="FiltreId" Type="int" />
+  </EntityType>
+  <EntityType Name="Logo">
+    <Key>
+      <PropertyRef Name="LogoId" />
+    </Key>
+    <Property Name="LogoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Image" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Markalar">
+    <Key>
+      <PropertyRef Name="MarkaId" />
+    </Key>
+    <Property Name="MarkaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MarkaAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="MarkaAciklama" Type="nvarchar(max)" />
+    <Property Name="Image" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Özellikler">
+    <Key>
+      <PropertyRef Name="ÖzellikId" />
+    </Key>
+    <Property Name="ÖzellikId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ÖzellikAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="FiltreId" Type="int" />
+  </EntityType>
+  <EntityType Name="Sayfalar">
+    <Key>
+      <PropertyRef Name="SayfaId" />
+    </Key>
+    <Property Name="SayfaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SayfaAd" Type="nvarchar" MaxLength="50" />
+    <Property Name="SayfaBaslik" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sayfaİcerik" Type="nvarchar(max)" />
+    <Property Name="GosterilsinMi" Type="bit" />
+  </EntityType>
+  <EntityType Name="SayfaResimleri">
+    <Key>
+      <PropertyRef Name="SayfaResmiId" />
+    </Key>
+    <Property Name="SayfaResmiId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SayfaId" Type="int" />
+    <Property Name="Image" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Slider">
+    <Key>
+      <PropertyRef Name="SlideId" />
+    </Key>
+    <Property Name="SlideId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Image" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="SSS">
+    <Key>
+      <PropertyRef Name="SSSId" />
+    </Key>
+    <Property Name="SSSId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SSSBaslik" Type="nvarchar" MaxLength="250" />
+    <Property Name="SSSAciklama" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Ürün">
+    <Key>
+      <PropertyRef Name="ÜrünId" />
+    </Key>
+    <Property Name="ÜrünId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KategoriId" Type="int" Nullable="false" />
+    <Property Name="ÜrünAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="ÜrünAciklama" Type="nvarchar(max)" />
+    <Property Name="Resim" Type="nvarchar" MaxLength="80" />
+    <Property Name="VideoUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="ÜrünKodu" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ÜrünKategori">
+    <Key>
+      <PropertyRef Name="UrunKategoriId" />
+    </Key>
+    <Property Name="UrunKategoriId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KategoriId" Type="int" Nullable="false" />
+    <Property Name="ÜrünId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ÜrünÖzellik">
+    <Key>
+      <PropertyRef Name="ÜrünÖzellikId" />
+    </Key>
+    <Property Name="ÜrünÖzellikId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ÜrünId" Type="int" />
+    <Property Name="ÖzellikId" Type="int" />
+    <Property Name="AltÖzellikId" Type="int" Nullable="false" />
+  </EntityType>
+  <Function Name="HaberListele" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="MarkaListele" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="KurumsalSiteAtekModelStoreContainer">
+    <EntitySet Name="AltÖzellikler" EntityType="Self.AltÖzellikler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Blog" EntityType="Self.Blog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Haberler" EntityType="Self.Haberler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="İletisim" EntityType="Self.İletisim" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kategori" EntityType="Self.Kategori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Logo" EntityType="Self.Logo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Markalar" EntityType="Self.Markalar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Özellikler" EntityType="Self.Özellikler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sayfalar" EntityType="Self.Sayfalar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SayfaResimleri" EntityType="Self.SayfaResimleri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Slider" EntityType="Self.Slider" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SSS" EntityType="Self.SSS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ürün" EntityType="Self.Ürün" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ÜrünKategori" EntityType="Self.ÜrünKategori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ÜrünÖzellik" EntityType="Self.ÜrünÖzellik" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

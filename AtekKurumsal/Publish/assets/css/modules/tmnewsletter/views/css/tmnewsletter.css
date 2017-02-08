@@ -1,0 +1,230 @@
+.newsletter-overlay {
+  background: rgba(25, 30, 59, 0.2);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 9999;
+  overflow: hidden; }
+  .newsletter-overlay #newsletter_popup {
+    background: white;
+    -moz-box-shadow: 0 1px 16px rgba(16, 39, 71, 0.5);
+    -webkit-box-shadow: 0 1px 16px rgba(16, 39, 71, 0.5);
+    box-shadow: 0 1px 16px rgba(16, 39, 71, 0.5);
+    border: none;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    z-index: 99999;
+    background: white;
+    margin: 0 auto;
+    max-width: 730px;
+    min-width: 290px;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    overflow: auto;
+    color: #a1a4ae; }
+    .newsletter-overlay #newsletter_popup .tmnewsletter-inner {
+      position: relative;
+      padding: 52px 80px 60px;
+      color: #000; }
+      @media (max-width: 991px) {
+        .newsletter-overlay #newsletter_popup .tmnewsletter-inner {
+          padding: 52px 20px 30px; } }
+      .newsletter-overlay #newsletter_popup .tmnewsletter-inner .icon.tmnewsletter-close {
+        position: absolute;
+        right: -15px;
+        top: -15px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        color: white;
+        z-index: 2;
+        background: #191e3b;
+        text-align: center;
+        -moz-border-radius: 100%;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        top: 23px;
+        right: 23px;
+        background: none; }
+        .newsletter-overlay #newsletter_popup .tmnewsletter-inner .icon.tmnewsletter-close:before {
+          font-family: "fl-outicons";
+          content: "\e00b";
+          display: inline-block;
+          font-weight: normal;
+          display: block;
+          font-size: 25px;
+          line-height: 25px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+        .newsletter-overlay #newsletter_popup .tmnewsletter-inner .icon.tmnewsletter-close:hover {
+          color: red; }
+        .newsletter-overlay #newsletter_popup .tmnewsletter-inner .icon.tmnewsletter-close:before {
+          color: #a1a4ae;
+          font-family: "fl-outicons";
+          content: "\e00b";
+          display: inline-block;
+          font-weight: normal;
+          font-size: 25px; }
+        .newsletter-overlay #newsletter_popup .tmnewsletter-inner .icon.tmnewsletter-close:hover:before {
+          color: #191e3b; }
+      .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-wrap {
+        max-height: 100%;
+        overflow: auto;
+        text-align: center; }
+      .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-header {
+        text-align: center; }
+        .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-header h4 {
+          display: inline-block;
+          color: #191e3b;
+          position: relative;
+          padding-top: 50px;
+          font: 400 36px/40px "Montserrat", Arial, Helvetica, sans-serif;
+          font-weight: normal; }
+          .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-header h4:before, .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-header h4:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+          .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-header h4:before {
+            top: 0;
+            width: 24px;
+            height: 33px;
+            border: 3px solid red; }
+          .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-header h4:after {
+            top: 11px;
+            height: 11px;
+            width: 3px;
+            background: white;
+            margin-left: 10px; }
+      .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content {
+        text-align: center;
+        padding: 24px 0 10px; }
+        @media (max-width: 991px) {
+          .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content {
+            padding: 5px 0; } }
+        .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content .description {
+          margin-bottom: 25px;
+          color: #a1a4ae;
+          font: 400 18px/24px "Montserrat", Arial, Helvetica, sans-serif;
+          font-weight: normal;
+          padding: 0; }
+          @media (min-width: 768px) {
+            .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content .description {
+              padding: 0 20%; } }
+          @media (max-width: 991px) {
+            .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content .description {
+              margin-bottom: 10px;
+              font-size: 11px; } }
+        .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content label {
+          display: none; }
+        .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content .form-group {
+          position: relative; }
+          .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content .form-group.email-error input.form-control {
+            border-color: #f13340; }
+          .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content .form-group.email-valid input.form-control {
+            border-color: #18B772; }
+          .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content .form-group input.form-control {
+            width: 100%;
+            height: 52px;
+            line-height: 30px;
+            background: none;
+            color: #a1a4ae;
+            padding: 11px 12px;
+            display: block;
+            border: 1px solid #a1a4ae;
+            border-radius: 0px;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            padding-right: 60px; }
+          .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content .form-group ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: #a1a4ae; }
+          .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content .form-group ::-moz-placeholder {
+            color: #a1a4ae; }
+          .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content .form-group .btn {
+            background: none;
+            width: 55px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            text-align: center;
+            color: #a1a4ae;
+            padding: 0;
+            border: none;
+            border-left: 1px solid #a1a4ae; }
+            .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content .form-group .btn:before {
+              font-family: "fl-outicons";
+              content: "\e049";
+              display: inline-block;
+              font-weight: normal;
+              font-size: 20px;
+              line-height: 30px;
+              position: absolute;
+              right: 0;
+              top: 50%;
+              width: 100%;
+              -moz-transform: translate(0, -50%);
+              -ms-transform: translate(0, -50%);
+              -o-transform: translate(0, -50%);
+              -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+              color: #a1a4ae;
+              -moz-transition: 0.3s;
+              -o-transition: 0.3s;
+              -webkit-transition: 0.3s;
+              transition: 0.3s; }
+            .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content .form-group .btn:hover {
+              background: rgba(161, 164, 174, 0.2); }
+              .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content .form-group .btn:hover:before {
+                padding-left: 4px; }
+            .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-content .form-group .btn span {
+              display: none; }
+      .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-footer {
+        text-align: right;
+        padding: 5px 0 0;
+        overflow: hidden; }
+        .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-footer .btn {
+          float: left; }
+          .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-footer .btn.tmnewsletter-close {
+            display: none; }
+        .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-footer .checkbox {
+          float: right;
+          margin: 15px 0 18px; }
+          .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-footer .checkbox .checker {
+            display: inline-block;
+            vertical-align: -1px; }
+            .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-footer .checkbox .checker span {
+              background: none;
+              border: 1px solid #292a2f;
+              color: white; }
+              .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-footer .checkbox .checker span.checked:before {
+                background: none;
+                font-size: 9px; }
+            .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-footer .checkbox .checker .checked:before {
+              left: 0; }
+          .newsletter-overlay #newsletter_popup .tmnewsletter-inner .tmnewsletter-footer .checkbox input {
+            display: block; }

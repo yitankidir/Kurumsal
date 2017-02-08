@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KurumsalSiteAtekModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AltÖzellikler">
+    <Key>
+      <PropertyRef Name="AltÖzellikId" />
+    </Key>
+    <Property Name="AltÖzellikId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ÖzellikId" Type="Int32" />
+    <Property Name="AltÖzellikAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Blog">
+    <Key>
+      <PropertyRef Name="BlogId" />
+    </Key>
+    <Property Name="BlogId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BlogBaslik" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Blogİcerik" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Haberler">
+    <Key>
+      <PropertyRef Name="HaberId" />
+    </Key>
+    <Property Name="HaberId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HaberBaslik" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="HaberAciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="PostedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="İletisim">
+    <Key>
+      <PropertyRef Name="İletisimId" />
+    </Key>
+    <Property Name="İletisimId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Telefon" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Fax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Kategori">
+    <Key>
+      <PropertyRef Name="KategoriId" />
+    </Key>
+    <Property Name="KategoriId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KategoriAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ÜstKategoriId" Type="Int32" />
+    <Property Name="ResimSira" Type="Int16" />
+    <Property Name="FiltreId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Logo">
+    <Key>
+      <PropertyRef Name="LogoId" />
+    </Key>
+    <Property Name="LogoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Markalar">
+    <Key>
+      <PropertyRef Name="MarkaId" />
+    </Key>
+    <Property Name="MarkaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MarkaAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MarkaAciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Özellikler">
+    <Key>
+      <PropertyRef Name="ÖzellikId" />
+    </Key>
+    <Property Name="ÖzellikId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ÖzellikAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FiltreId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Sayfalar">
+    <Key>
+      <PropertyRef Name="SayfaId" />
+    </Key>
+    <Property Name="SayfaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SayfaAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SayfaBaslik" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sayfaİcerik" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GosterilsinMi" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="SayfaResimleri">
+    <Key>
+      <PropertyRef Name="SayfaResmiId" />
+    </Key>
+    <Property Name="SayfaResmiId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SayfaId" Type="Int32" />
+    <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Slider">
+    <Key>
+      <PropertyRef Name="SlideId" />
+    </Key>
+    <Property Name="SlideId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SSS">
+    <Key>
+      <PropertyRef Name="SSSId" />
+    </Key>
+    <Property Name="SSSId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SSSBaslik" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="SSSAciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Ürün">
+    <Key>
+      <PropertyRef Name="ÜrünId" />
+    </Key>
+    <Property Name="ÜrünId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KategoriId" Type="Int32" Nullable="false" />
+    <Property Name="ÜrünAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ÜrünAciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Resim" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="VideoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ÜrünKodu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ÜrünKategori">
+    <Key>
+      <PropertyRef Name="UrunKategoriId" />
+    </Key>
+    <Property Name="UrunKategoriId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KategoriId" Type="Int32" Nullable="false" />
+    <Property Name="ÜrünId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ÜrünÖzellik">
+    <Key>
+      <PropertyRef Name="ÜrünÖzellikId" />
+    </Key>
+    <Property Name="ÜrünÖzellikId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ÜrünId" Type="Int32" />
+    <Property Name="ÖzellikId" Type="Int32" />
+    <Property Name="AltÖzellikId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="KurumsalSiteAtekEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AltÖzellikler" EntityType="Self.AltÖzellikler" />
+    <EntitySet Name="Blog" EntityType="Self.Blog" />
+    <EntitySet Name="Haberler" EntityType="Self.Haberler" />
+    <EntitySet Name="İletisim" EntityType="Self.İletisim" />
+    <EntitySet Name="Kategori" EntityType="Self.Kategori" />
+    <EntitySet Name="Logo" EntityType="Self.Logo" />
+    <EntitySet Name="Markalar" EntityType="Self.Markalar" />
+    <EntitySet Name="Özellikler" EntityType="Self.Özellikler" />
+    <EntitySet Name="Sayfalar" EntityType="Self.Sayfalar" />
+    <EntitySet Name="SayfaResimleri" EntityType="Self.SayfaResimleri" />
+    <EntitySet Name="Slider" EntityType="Self.Slider" />
+    <EntitySet Name="SSS" EntityType="Self.SSS" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Ürün" EntityType="Self.Ürün" />
+    <EntitySet Name="ÜrünKategori" EntityType="Self.ÜrünKategori" />
+    <EntitySet Name="ÜrünÖzellik" EntityType="Self.ÜrünÖzellik" />
+    <FunctionImport Name="HaberListele" ReturnType="Collection(KurumsalSiteAtekModel.HaberListele_Result)" />
+    <FunctionImport Name="MarkaListele" ReturnType="Collection(KurumsalSiteAtekModel.MarkaListele_Result)" />
+  </EntityContainer>
+  <ComplexType Name="HaberListele_Result">
+    <Property Type="Int32" Name="HaberId" Nullable="false" />
+    <Property Type="String" Name="HaberBaslik" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="HaberAciklama" Nullable="true" />
+    <Property Type="String" Name="Image" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="PostedBy" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="MarkaListele_Result">
+    <Property Type="Int32" Name="MarkaId" Nullable="false" />
+    <Property Type="String" Name="MarkaAdi" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MarkaAciklama" Nullable="true" />
+    <Property Type="String" Name="Image" Nullable="true" MaxLength="50" />
+  </ComplexType>
+</Schema>

@@ -1,0 +1,107 @@
+﻿@model AtekKurumsal.ViewModels.ProductModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutÜrün.cshtml";
+}
+
+@using PagedList
+@using PagedList.Mvc
+
+<body id="category" class="category category-12 category-bathroom show-left-column hide-right-column lang_en  two-columns">
+
+    <div id="page">
+        <div id="preloader"></div>
+
+        <div id="prdshow" class="columns-container">
+
+            <div class="breadcrumb clearfix">
+                <ul>
+                    <li class="home">
+                        <a class="home" href="" title="Anasayfaya Dön">
+                            <i class="fa fa-home"></i>
+                        </a>
+                    </li>
+                    <li class="last"> Bathroom   </li>
+                </ul>
+            </div>
+
+            <div class="page-wrap">
+                <div id="columns" class="container">
+                    <div class="row">
+                        <a href="#" id="home-scroll"></a>
+                        <div class="large-left col-sm-12">
+                            <div class="row">
+                                <div id="center_column" class="center_column col-xs-12 col-sm-9">
+
+                                    <div class="content_sortPagiBar clearfix">
+                                        <div class="sortPagiBar clearfix">
+                                            <form action="" method="get" class="nbrItemPage">
+                                                <div class="clearfix selector1">
+                                                    <label for="nb_item">
+                                                        Show
+                                                    </label>
+                                                    <input type="hidden" name="id_lang" value="1" />
+                                                    <input type="hidden" name="id_category" value="12" />
+                                                    <input type="hidden" name="controller" value="category" />
+                                                    <select name="n" id="nb_item" class="form-control">
+                                                        <option value="6" selected="selected">6</option>
+                                                        <option value="12" id="idd">12</option>
+                                                        <option value="30">30</option>
+                                                    </select>
+                                                    <span>per page</span>
+                                                </div>
+                                            </form>
+
+                                            <form id="productsSortForm" action="" class="productsSortForm">
+                                                <div class="select selector1">
+                                                    <label for="selectProductSort">Sort by</label>
+                                                    <select id="selectProductSort" class="selectProductSort form-control">
+                                                        <option value="position:asc" selected="selected">--</option>
+                                                        <option value="price:asc">Price: Lowest first</option>
+                                                        <option value="price:desc">Price: Highest first</option>
+                                                        <option value="name:asc">Product Name: A to Z</option>
+                                                        <option value="name:desc">Product Name: Z to A</option>
+                                                        <option value="quantity:desc">In stock</option>
+                                                        <option value="reference:asc">Reference: Lowest first</option>
+                                                        <option value="reference:desc">Reference: Highest first</option>
+                                                    </select>
+                                                </div>
+                                            </form>
+
+                                            <ul class="display">
+                                                <li class="display-title">View:</li>
+                                                <li id="grid">
+                                                    <a rel="nofollow" href="#" title="Grid">
+                                                        <i class="fa fa-th-large"></i>
+                                                        <span>Grid</span>
+                                                    </a>
+                                                </li>
+                                                <li id="list">
+                                                    <a rel="nofollow" href="#" title="List">
+                                                        <i class="fa fa-th-list"></i>
+                                                        <span>List</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                    @Html.Partial("_ÜrünListele", Model)
+
+                                </div>
+
+                                @Html.Action("_FilterSidebar", "Urun", new { KategoriId = @Model.KategoriId })
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+

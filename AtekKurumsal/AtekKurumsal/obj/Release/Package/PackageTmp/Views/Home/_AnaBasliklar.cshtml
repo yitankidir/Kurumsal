@@ -1,0 +1,63 @@
+﻿@model IEnumerable<AtekKurumsal.Models.Kategori>
+
+@using AtekKurumsal.Models;
+@{
+    KategoriAgac tree = new KategoriAgac();
+}
+
+<div class="wrapper it_QRQZJEHRDSGG ">
+    <div class="row it_URNWYKFUYLIK ">
+        <div class="it_DVCYPBQSFMXE col-xs-12   col-lg-12 padding-zero">
+            <div class="module ">
+                <div class="top_menu top-level tmmegamenu_item">
+                    <div class="menu-title tmmegamenu_item">Menu</div>
+
+                    <ul class="menu clearfix top-level-menu tmmegamenu_item">
+
+                        @foreach (var item in Model)
+                        {
+                            if (item.KategoriAdi == "Servis Ekipmanları")
+                            {
+                                <li class=" top-level-menu-li tmmegamenu_item it_32379013">
+                                    <a data-hover="@item.KategoriAdi" class="it_32379013 top-level-menu-li-a tmmegamenu_item" href="@Url.Action("Index", "Urun", new {KategoriId=item.KategoriId })">@item.KategoriAdi </a>
+                                    <div class="is-megamenu tmmegamenu_item first-level-menu it_32379013">
+                                        <div id="megamenu-row-1-1" class="megamenu-row row megamenu-row-1">
+
+                                            @Html.Action("_GenisAltKategori", "Home", new { ÜstKategoriId = item.KategoriId })
+
+                                        </div>
+                                    </div>
+                                </li>
+                            }
+                            
+                            else
+                            {
+                                <li class=" simple top-level-menu-li tmmegamenu_item it_54468093">
+                                    <a data-hover="@item.KategoriAdi " class="it_54468093 top-level-menu-li-a tmmegamenu_item" href="@Url.Action("Index", "Urun", new {KategoriId=item.KategoriId})">@item.KategoriAdi</a>
+
+                                    @if (tree.AltKategorileriGetir(item.KategoriId).Select(x => x.ÜstKategoriId).Count() == 0)
+                                    {
+
+                                    }
+
+                                    else
+                                    {
+                                        <ul class="is-simplemenu tmmegamenu_item first-level-menu it_54468093">
+
+                                            @Html.Action("_AltKategorileriListele", "Home", new { ÜstKategoriId = item.KategoriId })
+
+                                        </ul>
+                                    }
+                                </li>
+                            }
+
+                        }
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

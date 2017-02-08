@@ -1,0 +1,34 @@
+.homefeatured_block {
+  text-align: center; }
+  .homefeatured_block h2 {
+    display: inline-block;
+    color: #191e3b;
+    position: relative;
+    padding-top: 50px;
+    font: 400 36px/40px "Montserrat", Arial, Helvetica, sans-serif; }
+    .homefeatured_block h2 span.badge_heading {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      height: 33px;
+      width: 24px;
+      display: inline-block;
+      border-left: 3px solid #80d3db;
+      border-top: 3px solid #80d3db;
+      border-bottom: 3px solid #80d3db; }
+      .homefeatured_block h2 span.badge_heading:before, .homefeatured_block h2 span.badge_heading:after {
+        content: '';
+        position: absolute;
+        height: 8px;
+        width: 3px;
+        right: 0px;
+        background: #80d3db; }
+      .homefeatured_block h2 span.badge_heading:before {
+        top: 0; }
+      .homefeatured_block h2 span.badge_heading:after {
+        bottom: 0; }
